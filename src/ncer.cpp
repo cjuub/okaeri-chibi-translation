@@ -137,7 +137,6 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 				}
 			}
 		}
-
 	}
 
 	ncgr.save(out_file, tile_data_mod);
