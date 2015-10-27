@@ -1,5 +1,13 @@
 # okaeri-chibi-translation
 
+This is a fan translation project for the game *Okaeri! Chibi-Robo! Happy Richie Ōsōji!* for the Nintendo DS. The project aims to translate the game without including original copyrighted contents.
+This means that:
+
+* All graphics in the repository only contain the custom made parts of the graphics.
+* All text in the repository only contain the custom made translated strings.
+
+__The project is still a work in progress and it is not recommended for use.__
+
 ## Build
 The process of building the translated ROM is detailed below. Be sure to do the steps in order. Only Linux is supported for now.
 
