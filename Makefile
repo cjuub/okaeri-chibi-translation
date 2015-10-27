@@ -34,11 +34,3 @@ png_merge: src/png_merge.o src/lodepng.o
 # Standard clean
 clean:
 	rm -f src/*.o $(PROGS)
-
-depend: .depend
-
-.depend: $(SRCS)
-	rm -f ./.depend
-	$(CXX) $(CPPFLAGS) -MM $^>>./.depend;
-
-include .depend
