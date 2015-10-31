@@ -26,7 +26,10 @@ image_tool: $(OBJS2)
 		$(CXX) $(LDFLAGS) -o image_tool $(OBJS2) $(LDLIBS) 
 
 png_merge: src/png_merge.o src/lodepng.o
-		$(CXX) $(LDFLAGS) -o png_merge src/png_merge.o src/lodepng.o $(LDLIBS) 
+		$(CXX) $(LDFLAGS) -o png_merge src/png_merge.o src/lodepng.o $(LDLIBS)
+
+txt_merge: src/txt_merge.o
+		$(CXX) $(LDFLAGS) -o txt_merge src/txt_merge.o $(LDLIBS)
 
 # Phony targets
 .PHONY: all clean
