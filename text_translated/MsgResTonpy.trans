@@ -5,7 +5,7 @@ Please finish up the<N>the afternoon work!
 Please finish up the<N>afternoon Casino visit!
 Please finish up the<N>the nighttime work!
 Please finish up the<N>nighttime Casino visit!
-Good day.
+Good evening.
 Good morning.
 <1a0680010003>Good morning!
 
@@ -55,24 +55,24 @@ Citrusoft are so amazing!
 You can check a room's Cleanliness<N>percentage on the top screen.
 
 Your Chibi-Robo Rank<N>is still %d.
-Your Happy Points are<N>right now <1a06ff000005>%d.
-Your Happy ＆ Rich Points are<N>right now <1a06ff000005>%d.
-Happy Points<N><1a06ff000005>%d.
-Happy Points ＆ Rich Points<N><1a06ff000005>%d.
+Your Happy Points are<N>right now <1a06ff000005>%d
+Your Happy ＆ Rich Points are<N>right now <1a06ff000005>%d
+Happy Points<N><1a06ff000005>%d
+Happy Points ＆ Rich Points<N><1a06ff000005>%d
 As a result, your<N>Chibi-Robo Rank is now<1a068000000a>...
-<1a06ff000005>%d<1a06ff00000d>.
+<1a06ff000005>%d<1a06ff00000d>
 Chibi-Robo Rank<N>%d<N>▼<N><1a06ff000005>%d<1a06ff00000d>
 
 Your Chibi-Robo Rank has entered<N>the top <1a06ff000003>%d<1a06ff00000d>!!!
-In celebration of you<N>entering the top <1a06ff000003>%d<1a06ff00000d><1a068000000a>...
+In celebration of you entering<N>the top <1a06ff000003>%d<1a06ff00000d><1a068000000a>...
 A bonus has arrived<N>from Citrusoft!
 Just like this, continue to make<N>this house sparkling clean!
 Chibi-Robo's Watts<1a068000000a>...
 Has been upgraded to a max<N>of <1a06ff000007>%d<1a06ff00000d> Watts!
 The House-Watts<1a068000000a>...
-Can now be stored up to a max<N>of <1a06ff000007>%d<1a06ff00000d> Watts!
-By using the <1a06ff000009>Maintenance Machine<1a06ff00000d>,<N>The Plugs cord length...
-Has increased to <1a06ff000003>%d<1a06ff00000d>cm!
+Can now store up to a max<N>of <1a06ff000007>%d<1a06ff00000d> Watts!
+Using the <1a06ff000009>Maintenance Machine<1a06ff00000d>,<N>The Plugs cord length...
+Can now be extended<N>to <1a06ff000003>%d<1a06ff00000d>cm!
 The Chibi-Vacuum's Dust Bag<N>capacity has been upgraded<1a068000000a>...<1a0680000003>
 <1a06ff000004>To a max of <1a06ff000003>%d<1a06ff000004> bags!
 <1a06ff000003>Wonder Timer<1a06ff00000d> selections at the<N>Chibi-Computer have increased!
@@ -101,7 +101,7 @@ You should do your best in<N>order to find out just that.
 
 How much do you think this<N>Gold Dust is worth!?
 How much do you<N>think it's worth!?
-Let's use that <1a06ff000009>How-Much Machine<1a06ff00000d><N>to change it into Moolah!
+Let's use that <1a06ff000009>How-Much Machine<1a06ff00000d><N>to convert it into Moolah!
 W-<1a078004000a00> With this...
 With this...
 W-<1a078004001400> We'll also be able to participate<N>in the Savings Tournament!
@@ -142,8 +142,8 @@ Then I'm sure Jenny and the<N>others will be surprised!
 Chibi-Robo!<N>Don't be such a show-off!
 You don't have enough Moolah.
 
-The Plug cord has been<N>extended to <1a06ff000003>%d<1a06ff00000d>cm!
-Let's put up a mark as a<N>celebration!
+The Plug's cord has been<N>stretched to over <1a06ff000003>%d<1a06ff00000d>cm!
+Let's put up a mark to<N>celebrate this!
 
 You got some<N><1a06ff000005>Happy Points<1a06ff00000d>, huh!
 That means...
@@ -170,7 +170,7 @@ If you do it badly then you won't<N>be able to turn your head.
 Using that <1a06ff000003>Chibi-Computer<1a06ff00000d><N>over there...
 You can do training, read<N>the Chibi-Robo manual...
 And things like that.
-There are lot of things<N>you can do with it!
+There lots of things<N>you can do with it!
 You should definitely use it!
 Let's use the Gold Dust<N>you just found in the...
 <1a06ff000009>How-Much Machine<1a06ff00000d> to<N>convert it to Moolah!
@@ -221,10 +221,10 @@ And so another evening comes.<N>You should make someone happy!
 And so another evening comes.<N>Lots of riches to be made!
 And so another evening comes.<N>You should do some cleaning!
 And so another evening comes.
-
-
-
-
+Don't be discouraged.<N>Get those Happy Points!
+Don't be discouraged.<N>Get those Rich Points!
+Don't be discouraged.<N>Keep on cleaning!
+Don't be discouraged.
 Please leave it to us.
 You can do some training<N>with 「<1a06ff000003>Chibi-Training<1a06ff00000d>」!
 Good work!
@@ -240,7 +240,7 @@ The saving completed<N>according to the plan!
 
 Right now...
 <1a06ff000009>%s<1a06ff00000d> Cleanliness<N>is <1a06ff000005>%d<1a06ff00000d>％!
-Let's continue to make the<N><1a06ff000009>%s<1a06ff00000d> sparkle more and more!
+Let's continue to make the<N><1a06ff000009>%s<1a06ff00000d> sparkle even more!
 I don't really have<N>anything to talk about.
 Let's continue to make this<N>house sparkle more and more!
 Let's go and say hello<N>to Jenny's family!
@@ -345,16 +345,16 @@ What on earth is it used for<1a068000000a>...?<1a0680000003>
 I can't hear anything<N>but noise...
 What a wonderful melody...
 It's very emotional...
-It's the same as<N>Habanero wears!
+That's the same as<N>Habanero wears!
 Could it be... You're tired<N>of only cleaning all day.
 And want to become a<N>pro wrestler instead?
 
 <1a068000000a>...<1a0680000003>Right.
-It's the same as<N>Iberico is wearing!
+That's the same as<N>Iberico is wearing!
 Could it be<1a068000000a>...<1a0680000003> You're tired<N>of only cleaning all day.
 And want to become a<N>policeman instead?
-<1a0680010001>Don't fire anything<N>but blanks<1a068000000a>...<1a0680000003><1a0680010002>
-It's the same as<N>the Army wears!
+<1a0680010001>It doesn't even fire<N>anything but blanks<1a068000000a>...<1a0680000003><1a0680010002>
+That's the same as<N>the Army wears!
 Could it be<1a068000000a>...<1a0680000003> You're tired<N>of only cleaning all day.
 And want to join the<N>Army instead?
 <1a0680010001>It can be used to light up dark<N>places using the headlight<1a068000000a>...<1a0680000003><1a0680010002>
@@ -510,19 +510,19 @@ It looks like it can be exchanged<N>for quite a bit of Moolah!
 <1a06ff000009>How-Much Machine<1a06ff00000d> in the Chibi-House<N>to exchange it for Moolah!
 
 <1a06ff000003>That's a large keyhole<1a06ff00000d>, right!?
-I wonder where the door leads<1a0680000003>...?
+I wonder where this<N>trapdoor leads<1a0680000003>...?
 The <1a06ff000003>size<1a06ff00000d> of the key is wrong.
 It looks like we can't open<N>the door with that key.
 I wonder if there is any<N>other key around<1a068000000a>...?<1a0680000003>
 
-<1a0a8002000101010304><1a068000000a>What is that<1a0680000014>...<1a0680000003>?<1a0a8002000000000000>
-There's no data at all about it.<N>I will look into it!
+<1a0a8002000101010304><1a068000000a>What are those<1a0680000014>...<1a0680000003>?<1a0a8002000000000000>
+There's no data at all about them.<N>But I will look into it!
 <1a0a8002000101010304>Those ghost-like<N>creatures...<1a0a8002000000000000>
 They hide from humans and<N>makes houses dirty.
 That was a <1a06ff000003>Dirt Ghost<1a06ff00000d><N>and a <1a06ff000003>Dust Ghost<1a06ff00000d>!
-<1a0a8002000101010304> If it catches you it'll<N><1a06ff000003>drain<1a06ff00000d> your Watts.<1a0a8002000000000000>
+<1a0a8002000101010304> If they catch you, they'll<N><1a06ff000003>drain<1a06ff00000d> your Watts.<1a0a8002000000000000>
 <1a0a8002000101010304>So be careful not<N>to be caught<1a068000000a>...<1a0a8002000000000000>
-<1a0a8002000101010304>There's one more.<1a0a8002000000000000>
+<1a0a8002000101010304>Oh, there's one more.<1a0a8002000000000000>
 <1a06ff000003>Pickpocket Ghost<1a06ff00000d> who<N>steals coins from humans!
 <1a0a8002000101010304>If it catches you, it will<N><1a06ff000003>steal<1a06ff00000d> Moolah from you.<1a0a8002000000000000>
 <1a0a8002000101010304>If you're lucky then you may be<N>able to get back <1a06ff000003>double of what<N>was stolen<1a06ff00000d> from you<1a068000000a>...<1a0a8002000000000000>
@@ -534,16 +534,16 @@ Chibi-Robo!<N>You were cought by a Ghost!
 
 That's it!<1a078004000a00> Chibi-Robo!
 A very good idea<N>just struck me!
-
-
-
-
-
-
-
-
-Now. As part of this family.
-Let's aim to make this<N>poor family rich<1a068000000a>...
+As a thanks for them taking<N>us into their family...
+Let's use the Moolah we earn<N>from converting Gold Dust...
+To buy various things from<N>the <1a06ff000003>TV shopping show<1a06ff00000d>...
+In order to make Jenny and<N>the others feel <1a06ff00000b>rich<1a06ff00000d>!
+You can do that by looking at<N>the TV shopping show on TV...
+And then checking the<N>items you want to buy...
+Afterwards, you should write down<N>the item's number on this!
+Use the <1a06ff000003>L or R button<1a06ff00000d> to take notes<N>while using the TV or phone.
+Since we're part<N>of this family now.
+We should aim to make this<N>poor family richer<1a068000000a>...
 
 
 Huh?
@@ -590,10 +590,10 @@ I forgot something<N>important<1a068000000a>...<1a0680000003>
 <1a06ff000009>%s<1a06ff00000d> has become<N>relatively clean.
 <1a06ff000009>%s<1a06ff00000d> has become<N>incredibly clean.
 <1a06ff000009>%s<1a06ff00000d> has become<N>a bit cleaner.
-An award from Citrusoft!
+As an award from Citrusoft...
 In TV shopping<1a068000000a>...<1a0680000003>
-<1a06ff000009>%s<1a06ff00000d> has arrived<N>in <1a06ff000003>stock<1a06ff00000d>!
-<1a06ff000009>%s<1a06ff00000d>'s Cleanliness has<N>become <1a06ff000003>%d<1a06ff00000d>％!
+<1a06ff000009>%s<1a06ff00000d><N>can now be <1a06ff000003>bought<1a06ff00000d>!
+<1a06ff000009>%s<1a06ff00000d>'s Cleanliness<N>has become <1a06ff000003>%d<1a06ff00000d>％!
 Let's work hard in order not to<N>lose to the other Chibi-Robos!
 The more and harder we work<N>the more and more...
 Stuff and upgrades we will<N>receive from Citrusoft!
