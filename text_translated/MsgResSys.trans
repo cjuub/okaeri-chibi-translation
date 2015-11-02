@@ -185,13 +185,13 @@ With this you can<N>become a pro wrestler.
 Be able to play the guitar.
 A bird who can't fly...
 With this you can get a<N>cool tuxedo look.
-Be able to use Telly at<N>special marks.
-Be able to roll up your plug and<N>throw it like a ball.
-Be able to vacuum dirt, water<N>and graffiti.
+Use Telly at Telly Marks
+Roll up your plug and<N>throw it like a ball.
+Vacuum dirt, water and graffiti
 Vacuuming range will increase.
 Watts usage will be reduced.
 Floor vacuuming speed will<N>increase.
-
+Replacement Outlet
 Recover some Watts if you run<N>out.
 ...?
 Perhaps it would fit in a large<N>keyhole...?
@@ -263,7 +263,7 @@ Living Room Wall
 Living Room Table
 Fireplace
 Living Room Sofa
-
+Clownfish
 Air-conditioner
 500 House-Watts
 700 House-Watts
@@ -321,7 +321,7 @@ Flat Object
 
 
 Taste Rich Object
-Moolah-like Object
+Clownfish
 A Somewhat Warm Object
 Flat Object
 
@@ -390,7 +390,7 @@ Something just got in<N><1a06ff000003>stock<1a06ff00000d>!
 *Click*
 <1a0680010001>That's right<1a078004000a00>. Over here.<N>It's everybody's Citrusoft.
 <1a0680010001>It's TV shopping which has every<N>possible item you can imagine.
-<1a0680010001>The things you buy will be delivered<N>to your home before you even<N>know it.<1a0680010002>
+<1a0680010001>The purchased items will be delivered<N>to your home before you know it.<1a0680010002>
 <1a0680010001>We look forward to your<N>next visit.
 Chibi-Robo you can't speak,<N>you know.
 
@@ -441,12 +441,12 @@ Deposited Moolah.
 
 
 
+Enter an <1a06ff000003>item number<1a06ff00000d> and then<N>press 「<1a06ff000003>＃<1a06ff00000d>」 to place the order.
 
 
-
-
-
-
+Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06ff00000d> Moolah<N>It's currently sold out.
+Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06ff00000d> Moolah<N> <N>Buy it with 「<1a06ff000003>＃<1a06ff00000d>」<N>Cancel with 「＊」
+Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06ff00000d> Moolah<N>You don't have enough Moolah.
 
 Thank you for<N>your purchase.
 
