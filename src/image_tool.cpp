@@ -3,6 +3,7 @@
 #include "nscr.h"
 
 #include <string>
+#include <cstdlib>
 
 using namespace std;
 

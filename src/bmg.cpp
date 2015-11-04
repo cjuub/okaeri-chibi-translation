@@ -6,6 +6,9 @@
 #include <vector>
 #include <fstream>
 #include <cstdint>
+#include <cstdlib>
+#include <sstream>
+
 
 using namespace std;
 
@@ -143,7 +146,13 @@ void BMG::insert_text(string& in_file, string& out_file) {
 					val.push_back(b);
 					val.push_back(ifs.get());
 					++extra;
-					bytes.push_back(stoul(val, nullptr, 16));
+
+					stringstream str;
+					str << val;
+					int value;
+					str >> std::hex >> value;
+
+					bytes.push_back(value);
 					break;
 				}
 			}

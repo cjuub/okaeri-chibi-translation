@@ -14,7 +14,7 @@ SRCS2 = src/ncgr.cpp src/ncer.cpp src/nscr.cpp src/lodepng.cpp src/image_tool.cp
 OBJS2 = $(subst .cpp,.o,$(SRCS2))
 
 # Targets
-PROGS = text_tool image_tool png_merge
+PROGS = text_tool image_tool png_merge txt_merge
 
 all: $(PROGS)
 

@@ -3,6 +3,10 @@
 #include "little_endian.h"
 
 #include <fstream>
+#include <sstream>
+
+#define SSTR( x ) dynamic_cast< std::ostringstream & >( \
+        ( std::ostringstream() << std::dec << x ) ).str()
 
 using namespace std;
 
@@ -46,7 +50,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int img_offs_y = img_h / 2;
 
 
-		ifstream check(bmp_folder + "/" + to_string(i) + ".png");
+		ifstream check(bmp_folder + "/" + SSTR(i) + ".png");
 		bool exists = false;
 		if (check.good()) {
 			exists = true;
@@ -56,10 +60,10 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 
 		vector<unsigned char> image;
 		if (exists) {
-			lodepng::decode(image, img_w, img_h, bmp_folder + "/" + to_string(i) + ".png");
+			lodepng::decode(image, img_w, img_h, bmp_folder + "/" + SSTR(i) + ".png");
 		}
 
-		ifstream meta(bmp_folder + "/" + to_string(i) + ".meta");
+		ifstream meta(bmp_folder + "/" + SSTR(i) + ".meta");
 		bool meta_exists = false;
 		if (meta.good()) {
 			meta_exists = true;
@@ -222,7 +226,7 @@ void NCER::extract_cells(std::string& in_file, NCGR& ncgr, std::string& out_fold
 			}
 		}
 
-		lodepng::encode(out_folder + "/" + to_string(i) + ".png", image, img_w, img_h);
+		lodepng::encode(out_folder + "/" + SSTR(i) + ".png", image, img_w, img_h);
 	}
 
 	ifs.close();
