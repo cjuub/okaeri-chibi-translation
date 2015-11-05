@@ -55,8 +55,8 @@ Citrusoft are so amazing!
 You can check a room's Cleanliness<N>percentage on the top screen.
 
 Your Chibi-Robo Rank<N>is still %d.
-Your Happy Points are<N>right now <1a06ff000005>%d
-Your Happy ＆ Rich Points are<N>right now <1a06ff000005>%d
+Right now you have<N><1a06ff000005>%d<1a06ff00000d> Happy Points.
+Right now you have<N><1a06ff000005>%d<1a06ff00000d> Happy ＆ Rich Points
 Happy Points<N><1a06ff000005>%d
 Happy Points ＆ Rich Points<N><1a06ff000005>%d
 As a result, your<N>Chibi-Robo Rank is now<1a068000000a>...
@@ -66,8 +66,8 @@ Chibi-Robo Rank<N>%d<N>▼<N><1a06ff000005>%d<1a06ff00000d>
 Your Chibi-Robo Rank has entered<N>the top <1a06ff000003>%d<1a06ff00000d>!!!
 In celebration of you entering<N>the top <1a06ff000003>%d<1a06ff00000d><1a068000000a>...
 A bonus has arrived<N>from Citrusoft!
-Just like this, continue to make<N>this house sparkling clean!
-Chibi-Robo's Watts<1a068000000a>...
+Just continue to make<N>this house sparkling clean!
+Your Watts<1a068000000a>...
 Has been upgraded to a max<N>of <1a06ff000007>%d<1a06ff00000d> Watts!
 The House-Watts<1a068000000a>...
 Can now store up to a max<N>of <1a06ff000007>%d<1a06ff00000d> Watts!
@@ -84,9 +84,9 @@ I may sound arrogant<N>but it's all thanks to me!
 There are also other Chibi-Robos<N>and Tellys out there....
 In all the world's houses, collecting<N>Happy Points just like us.
 Let's work hard in order not to<N>lose to other Chibi-Robos!
-The Chibi-Robo Rank...
+About the Chibi-Robo Rank...
 It's like a report card for<N>the work we do here.
-As we get more and more<N>acknowleged by Citrusoft,<N>the rewards will keep coming.
+As we get more acknowledged by<N>Citrusoft, we get more rewards.
 The Chibi-Robo Rank does not depend<N>solely on Happy Points...
 It will also increase<N>from Rich points.
 If you buy lots of things, you'll <N>also get lots of Rich Points.
@@ -768,7 +768,7 @@ Vacuum that guy in order to<N>take back the Moolah!
 
 The House-Watts has become<N>completely empty!
 Because the House-Watts are<N>empty, there is no power.
-That mean the Chibi-Vacuum<N><1a06ff000003>won't be able to work<1a06ff00000d>!
+That means the Chibi-Vacuum<N><1a06ff000003>won't be able to work<1a06ff00000d>!
 If you do that, you'll be<N>able to clean again.
 
 Chibi-Robo!<N>The preparations are done!
