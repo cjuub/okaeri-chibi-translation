@@ -324,39 +324,39 @@ Taste Rich Object
 Clownfish
 A Somewhat Warm Object
 Flat Object
-
+Heavy Object
 Blazing Object
 Watery Object
 Warm Object
-
+Fat Object
 Tight Object
+Light Object
+
+Flat Object
+Heavy Object
+Flat Object
+Heavy Object
+Bulged Object
 
 
+Distinct Object
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Flat Object
+Heavy Object
+Sticky Object
+Cozy Object
+Unfashionable Object
+Fat Object
+Fluffy Object
+Tight Object
+Soft Object
+Flat Object
+Heavy Object
+Refreshing Object
+Calm Object
+Steamy Object
+Comfortable Object
+Fluttering Object
 
 Welcome to Chibi-Computer!
 Come back again〜!
@@ -416,7 +416,7 @@ Chibi-Robo you can't speak,<N>you know.
 <1a0680010003>【Ghost Capture】<1a0680010002>
 
 <1a06ff000009>%s<1a06ff000004> has been<N>placed in %s!
-
+<1a06ff000004>Let's give some color to<N>the <1a06ff000009>%s<1a06ff000004><1a06ff000004>!
 <1a06ff000009>%s<1a06ff000004>'s interior has been<N>beautifully arranged!!
 
 Day <1a06ff000003>%d<1a06ff00000d>
