@@ -168,11 +168,11 @@ Memory Locket
 Chibi-Robo Replica
 Phantom's Secret Treasure
 
-Use the L and R buttons to switch<N>modes in order to suck up dust<N>and other things.
+Use the L or R buttons to switch<N>modes in order to suck up dust<N>and other things.
 With this you can sieve dust<N>you have collected.
-Use the L and R buttons to switch<N>modes to floor cleaning in order<N>to scrub away dirt.
-Use the L and R buttons to switch<N>modes to the Squirter in order to<N>raise plants.
-Use the L and R buttons to switch<N>modes to digging in order to search<N>for treasures under the ground.
+Use the L or R buttons to switch<N>modes to floor cleaning in order<N>to scrub away dirt.
+Use the L or R buttons to switch<N>modes to the Squirter in order to<N>raise plants.
+Use the L or R buttons to switch<N>modes to digging in order to search<N>for treasures under the ground.
 A economic low energy vehicle
 A vehicle with outstanding<N>speed.
 A vehicle used to fly<N>freely in the air.
@@ -370,8 +370,8 @@ Staff Credits
 Load
 
 <1a0680010003>This area has become<N><1a06ff000003>sparkling<1a06ff00000d> clean!
-<1a0680010003><1a06ff000009>%s<1a06ff00000d> has<N>become pleasantly<N><1a06ff000003>sparkling<1a06ff00000d> clean!
-<1a0680010003><1a06ff000009>%s<1a06ff00000d> has<N>become extremely<N><1a06ff000003>sparkling<1a06ff00000d> clean!
+<1a0680010003>The <1a06ff000009>%s<1a06ff00000d> has<N>become pleasantly<N><1a06ff000003>sparkling<1a06ff00000d> clean!
+<1a0680010003>The <1a06ff000009>%s<1a06ff00000d> has<N>become extremely<N><1a06ff000003>sparkling<1a06ff00000d> clean!
 <1a0680010003><1a06ff000009>The house<1a06ff00000d> has<N>become completely<N><1a06ff000003>sparkling <1a06ff00000d>clean!
 <1a0680010003>Wh-<1a078004001400>What!!<1a0680010002>
 <1a0680010003><1a06ff000009>The house<1a06ff00000d> has<N>become extremely<N><1a06ff000003>sparkling <1a06ff00000d>clean!
@@ -450,7 +450,7 @@ Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06f
 
 Thank you for<N>your purchase.
 
-
+<1a06ff000004>Spin it around with the stylus!
 Welcome.
 I'm stuffed<1a068000000a>...<1a0680000003>
 

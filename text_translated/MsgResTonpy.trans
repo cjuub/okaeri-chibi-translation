@@ -55,8 +55,8 @@ Citrusoft are so amazing!
 You can check a room's Cleanliness<N>percentage on the top screen.
 
 Your Chibi-Robo Rank<N>is still %d.
-Right now you have<N><1a06ff000005>%d<1a06ff00000d> Happy Points.
-Right now you have<N><1a06ff000005>%d<1a06ff00000d> Happy ＆ Rich Points
+Right now you have<N><1a06ff000005>%d<1a06ff00000d><N>Happy Points.
+Right now you have<N><1a06ff000005>%d<1a06ff00000d><N>Happy ＆ Rich Points
 Happy Points<N><1a06ff000005>%d
 Happy Points ＆ Rich Points<N><1a06ff000005>%d
 As a result, your<N>Chibi-Robo Rank is now<1a068000000a>...
@@ -120,7 +120,7 @@ However, there's not much use<N>for it in this household<1a068000000a>...<1a0680
 
 You'll need <1a06ff000003>Moolah<1a06ff00000d> in order to<N>use the <1a06ff000009>Maintenance Machine<1a06ff00000d>.
 Do you want to use the<N><1a06ff000009>Maintenance Machine<1a06ff00000d>?
-Maximum cord length<N>increased to <1a06ff000003>%d<1a06ff00000d>cm!
+Maximum cord length has<N>increased to <1a06ff000003>%d<1a06ff00000d>cm!
 That's the<N><1a06ff000009>Maintenance Machine<1a06ff00000d>.
 It can be used to maintain<N>your internal parts.
 It's of no use to you if you don't<N>earn some <1a06ff000003>Moolah<1a06ff00000d> first.
@@ -462,8 +462,8 @@ There's also a lot of <1a06ff000003>Dust<1a06ff00000d><N>and <1a06ff000003>Dirt<
 We just have to<N>do something, right!
 It's covered with<N>flour and Dust<1a068000000a>...<1a0680000003>
 How many years has it been<N>since they last cleaned<1a068000000a>...<1a0680000003>?
-There's some weird artwork.
-
+There's some weird<N>works of art here.
+Just who made all of<N>this stuff<1a068000000a>...<1a0680000003>?
 <1a0680010003>I forgot something<N>important!
 The thing at the tip of your<N>cord, stuck to your bottom...
 That's the <1a06ff000003>Plug<1a06ff00000d>. You can pick<N>it up by touching on it!
@@ -545,7 +545,7 @@ Use the <1a06ff000003>L or R button<1a06ff00000d> to take notes<N>while using th
 Since we're part<N>of this family now.
 We should aim to make this<N>poor family richer<1a068000000a>...
 
-
+How are we going to<N>get all the way up there<1a068000000a>...?
 Huh?
 That drainpipe<1a068000000a>...
 It seems to be <1a06ff000003>connected<1a06ff00000d><N>to the one in the Kitchen<1a068000000a>...
@@ -580,20 +580,20 @@ C- <1a078004000a00>Chibi-Robo!
 Get ready<1a0680000014>...<1a0680000000><N><1a0a8002000102020304><1a06ff000003>Start!<1a0680000003><1a0a8002000000000000>
 
 I forgot something<N>important<1a068000000a>...<1a0680000003>
-
-
-
-
+In furniture and electrical<N>appliances from Citrusoft...
+There is a functionality so that<N>small Chibi-Robos can use them.
+To do that...
+They have added a <1a06ff000003>Switch<N>Outlet<1a06ff00000d> to those things!
 <1a0680010003>Nice!<1a078004000a00> As expected<N>from Citrusoft!<1a0680010002>
+If you find any you should<N>try to flip them.
 
-
-<1a06ff000009>%s<1a06ff00000d> has become<N>relatively clean.
-<1a06ff000009>%s<1a06ff00000d> has become<N>incredibly clean.
-<1a06ff000009>%s<1a06ff00000d> has become<N>a bit cleaner.
+The <1a06ff000009>%s<1a06ff00000d> has become<N>relatively clean.
+The <1a06ff000009>%s<1a06ff00000d> has become<N>incredibly clean.
+The <1a06ff000009>%s<1a06ff00000d> has become<N>a bit cleaner.
 As an award from Citrusoft...
 In TV shopping<1a068000000a>...<1a0680000003>
 <1a06ff000009>%s<1a06ff00000d><N>can now be <1a06ff000003>bought<1a06ff00000d>!
-<1a06ff000009>%s<1a06ff00000d>'s Cleanliness<N>has become <1a06ff000003>%d<1a06ff00000d>％!
+The <1a06ff000009>%s<1a06ff00000d>'s Cleanliness<N>has become <1a06ff000003>%d<1a06ff00000d>％!
 Let's work hard in order not to<N>lose to the other Chibi-Robos!
 The more and harder we work<N>the more and more...
 Stuff and upgrades we will<N>receive from Citrusoft!
@@ -660,7 +660,7 @@ Lucky's...
 <1a06ff000003>New clothes have arrived!
 <1a06ff000003>Celebrity clothes<1a06ff00000d> have<N>been delivered!
 I wonder what kind<N>of clothes they are!?
-Let's go look when you have some<N>time over during noon!
+Let's go look when you have some<N>time over during daytime!
 Add new furniture to make<N>the house more lovely.
 You can receive something<N>for free from Citrusoft!
 Let's buy a lot of things<N>from the TV shopping!
