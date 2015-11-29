@@ -25,8 +25,8 @@ You're wearing some sort of<N>helmet, so I thought you were a<N>burglar-soldier.
 You're wearing some sort of<N>goggles, so I thought you were an<N>underwater-burglar.
 You're wearing som sort of<N>tomato so I thought you were a<N>burglar-tomato.
 I thought you were a gentleman<N>burglar with good manners.
-Digging up a <1a06ff000009>%s<1a06ff00000d> would be<N>nice. But finding a <1a06ff000009>%s<1a06ff00000d> would<N>be awesome.
-There is a nice smell coming<N>from under the floor.
+When it comes to digging places...<N><1a06ff000009>%s<1a06ff00000d> is nice. But<N> the <1a06ff000009>%s<1a06ff00000d> is even better.
+There are lots of nice smells<N>coming from under the ground.
 Robo, please help me!
 That gun uses 10 Watts per shot,<N>and it only fires blank shots.
 But it makes such a large sound<N>that it will <1a06ff000003>scare<1a06ff00000d> things away.
@@ -78,12 +78,12 @@ I heard patrolling<N>is being difficult.
 No, I don't really understand it<N>either.
 <1a068000000a>...<1a0680000003>Huh?
 P-<1a078004001400>Perhaps.
-You have <1a06ff000003>%d<1a06ff00000d> <1a06ff000009>%s<1a06ff00000d>!?
+You have <1a06ff000009>%s<1a06ff00000d>s?<N>Specifically, <1a06ff000003>%d<1a06ff00000d> of them!?
 Please give them<N>all to me yo!!
 Please give me one yo!!
 Then...<N>Please give me one yo!!
-Pork, cookies, anything.<N>It doesn't matter what you grill,<N>everything is tasty!
-I actually like it grilled better,<N>but thanks anyway yo!
+Pork, cookies, anything.<N>It doesn't matter what you bake,<N>everything is tasty!
+I actually like them baked better,<N>but thanks anyway yo!
 <1a0680010003>You're cheap yo!<1a0680010002>
 As a thanks, I'll teach<N>you something nice.
 *Sigh*<1a068000000a>...<1a0680000003>
@@ -105,7 +105,7 @@ Just who are you?
 If you're a burglar then<N>I'll arrest you yo!
 Pleased to meet you.
 Who are you!?
-<1a0a8002000101010304>I-<1a078004000a00> I'm called Telly<1a068000000a>...<1a0a8002000000000000>
+<1a0a8002000101010304>I-<1a078004000a00> I'm Telly<1a068000000a>...<1a0a8002000000000000>
 You don't look like a<N>burglar for some reason.
 <1a0a8002000101010304>Th-<1a078004000a00> This here is<N>Chibi-Robo<1a068000000a>...<1a0a8002000000000000>
 <1a0680010003>What!?<N>Chibi-<1a078004001400><1a068000000a>Robber<1a0680000003>!?
@@ -157,7 +157,7 @@ Relax. Since 99.999999％ pass it,<N>there's no need to worry.
 You look cool Chibi-Robo!<N>You're like a Robo-Cop!
 Do you want to<N>help with something?
 Who are you!?
-<1a0a8002000101010304>I-<1a078004000a00> I'm called Telly<1a068000000a>...<1a0a8002000000000000>
+<1a0a8002000101010304>I-<1a078004000a00> I'm Telly<1a068000000a>...<1a0a8002000000000000>
 Oh, right.
 Hey you, can you throw<N>a Moolah Coin for us?
 C-<1a078004000a00> Certainly!
@@ -198,19 +198,19 @@ What's with all the noise!?
 
 What's going on!?<N>Iberico!!
 My very close friend <1a06ff000003>Boneless<1a06ff00000d><N>has been kidnapped yo.
-This <1a06ff000003>ham<1a06ff00000d> here belongs<N>to Boneless<1a068000000a>...
+Boneless is the <1a06ff000003>ham<1a06ff00000d><N>that used to be here<1a068000000a>...
 The investigation of the<N>kidnapping of Boneless will<1a068000000a>...
 <1a0680010003>Now begin!
 C-<1a078004001400> Certainly!
 Th-<1a068000000a>...<1a0680000003>This is!
 A clue left behind<N>by Boneless<1a068000000a>...?
 This is important evidence!
-It seems like the<N>kidnapping occured<1a068000000a>...
+It seems like the<N>kidnapping occurred<1a068000000a>...
 Sometime last night<1a068000000a>...
 The night %d days ago<1a068000000a>...
 I-Incredible!<N>You can tell just from the smell!
 As expected from a pig detective!<N>Such a powerful nose〜
-Chibi-Robo!<N>Let's enroll!
+Chibi-Robo!<N>Let's aid him!
 Alright, even if it's by myself.
 Please go ahead<N>detective Iberico<1a068000000a>...
 <1a0680010003>He ate it!
@@ -218,7 +218,7 @@ Now, you guys<1a068000000a>...
 Do you know who<N>the culprit is?
 In this puzzling<N>kidnapping case...
 It seems like that<N>guy is connected yo.
-Huh?<N>Who do you mean?
+Huh?<N>You're asking who I mean?
 That's what I'm trying<N>to figure out yo!
 
 I'm not scared<1a068000000a>...<1a0680000003><N>I'm not scared<1a068000000a>...
@@ -229,25 +229,25 @@ From here on is a rather<N>dangerous area.
 Perhaps<1a068000000a>...<1a0680000003><N>The culprit might be there!
 Shall we patrol the<N>Hallway together?
 But<1a068000000a>...
-<1a0680010003>Start patrolling!
+<1a0680010003>Let's start patrolling!
 *Squeak*! *Squeak*!<N>*Squeak*! *Squeak*! *Squeak*!
-<1a0680010003>A-<1a078004001400> Arrest it!
+<1a0680010003>Y-<1a078004001400> You're under arrest!
 That's<1a068000000a>...<1a0680000003>?
 
 Th-<1a068000000a>...<1a0680000003>This is!
 A clue left behind<N>from Boneless<1a068000000a>...<1a0680000003>?
 Detective Iberico!<N>Isn't this a huge achievement!?
-Once again, he<1a068000000a>...<1a0680000003>
-<1a0680010003>Ate the important evidence!
+Once again, he's<1a068000000a>...<1a0680000003>
+<1a0680010003>Eating the important<N>evidence!
 <1a0680010001>*Bam*!
 <1a0680010001>*Baam*!!
 *Baaaam*!!!
 <1a0680010003>*Baaaaam*!!!!
 <1a0680010003>C-Come out kidnapper!!
-<1a0680010003>【Large Monster Lucky】<1a0680010002><N><1a06ff000004>Drive away Lucky to the<N>left and right!
+<1a0680010003>【Large Monster Lucky】<1a0680010002><N><1a06ff000004>Avoid Lucky by going to<N>the left or right!
 <1a0680010003>Incredible!!!
 <1a0680010003>*Eeeeek*!!!
-Not<1a068000000a>... <1a078004001400><1a0680000003>Cool<1a068000000a>...
+That wasn't very<1a068000000a>... <1a078004001400><1a0680000003>Cool<1a068000000a>...
 Hm?
 
 I- <1a078004001400> I-<1a078004001400> I-<1a068000000a>...<1a0680000003>

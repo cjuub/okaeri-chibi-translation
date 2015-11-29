@@ -18,7 +18,7 @@
 *Buzz*
 *Squeak*!
 *Squeak*! *Squeak*!<N>*Squeak*! *Squeak*! *Squeak*!
-
+*Dripping*<1a068000000a>...<1a0680000003>
 *Click*!
 <1a0680010003>*Bang*!<1a0680010002>
 *Click*!
@@ -370,8 +370,8 @@ Staff Credits
 Load
 
 <1a0680010003>This area has become<N><1a06ff000003>sparkling<1a06ff00000d> clean!
-<1a0680010003>The <1a06ff000009>%s<1a06ff00000d> has<N>become pleasantly<N><1a06ff000003>sparkling<1a06ff00000d> clean!
-<1a0680010003>The <1a06ff000009>%s<1a06ff00000d> has<N>become extremely<N><1a06ff000003>sparkling<1a06ff00000d> clean!
+<1a0680010003><1a06ff000009>%s<1a06ff00000d> has<N>become pleasantly<N><1a06ff000003>sparkling<1a06ff00000d> clean!
+<1a0680010003><1a06ff000009>%s<1a06ff00000d> has<N>become extremely<N><1a06ff000003>sparkling<1a06ff00000d> clean!
 <1a0680010003><1a06ff000009>The house<1a06ff00000d> has<N>become completely<N><1a06ff000003>sparkling <1a06ff00000d>clean!
 <1a0680010003>Wh-<1a078004001400>What!!<1a0680010002>
 <1a0680010003><1a06ff000009>The house<1a06ff00000d> has<N>become extremely<N><1a06ff000003>sparkling <1a06ff00000d>clean!
@@ -458,7 +458,7 @@ I'm stuffed<1a068000000a>...<1a0680000003>
 
 Please wait a bit longer.
 
-The Chibi-Pinwheels has generated<N><1a06ff000005>%d<1a06ff00000d> Watts!
+The Chibi-Pinwheels has<N>generated <1a06ff000005>%d<1a06ff00000d> Watts!
 
 ???
 Chibi-Watts
