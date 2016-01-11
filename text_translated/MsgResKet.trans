@@ -211,7 +211,7 @@ Ohoho.<N>They're already blooming.
 <1a0680010003><1a0a8002000101010304>Hmm.<1a0a8002000000000000>
 They're still so green even though<N>I played my guitar for them.
 I shouldn't let the family eat<N>these gross green tomatoes.
-I won't be able to<N>face my landlord!
+I won't be able to<N>face the sun!
 Green tomatoes hardly<N>make me any money.
 What's with that look?<N>You don't believe me?
 Right, I'll give you all of the income<N>so you can see how bad it is.
@@ -308,13 +308,24 @@ Forks are no toys<1a068000000a>...<1a0680000003>
 <1a0680000014>...<1a0680000003>Jeez.
 Leaving the house without<N>saying anything...
 
+I thought i'd stop by to see<N>Habanero on my journey...
+But all I see is this guy?<N>Who is he?
+The Habanero poster has been<N>replaced by a soccer poster.
+He doesn't seem to come back<N>no matter how long I wait...
+And the <1a06ff000009>Legendary Fork<N>Guitar<1a06ff00000d> is also waiting...
+That's it! I'm going to the big<N>city Kitchen to get it now!
 
-Who's this gramps.
 
 
+<1a0680010003>He-<1a0680010002>
+<1a0680010003>-llo!<1a0680010002>
 
+So this is the big city Kitchen?
+It's completely different<N>from my field.
 
 
+!!
+<1a0680010003><1a0a8002000102020304>Chibi-Robo!<1a0a8002000000000000><1a0680010002>
 
 
 
@@ -324,12 +335,23 @@ Who's this gramps.
 
 
 
+What's that?
+I know what it is!<N>It's <1a06ff000009>Nectar Throat Lozenge<1a06ff00000d>!
+Wow... There sure are<N>a lot of things here.
 
+Isn't it the <1a06ff000009>Legendary<N>Fork Guitar<1a06ff00000d>!?
+But... It's so high up.
+How am I going to<N>get up there<1a0680000014>...?<1a0680000003>
+When in a pinch, calm down<N>and play the guitar!
 
+Ohoho!<N>There's no doubt about it!
+<1a0a8002000103030203><1a0680010003>It's the<N><1a06ff000009>Legendary Fork Guitar<1a06ff00000d>!!<1a0a8002000000000000><1a0680010002>
+<1a0a8002000103030203><1a0680010003>THIS IS IT!<1a0a8002000000000000><1a0680010002>
 
 
 
 
+Sorry!
 
 
 
@@ -338,133 +360,136 @@ Who's this gramps.
 
 
 
+Oh, right now the<N>time is %d:%d.
+You can't see the sun<N>here in the big city.
+But thanks to that darling girl<N>I could finally tell the time.
+<1a0680000000>Huh?<1a0680000003>
+What am I even saying?
+Since I finally got this...
+Let's pick up chicks with the<N><1a06ff000009>Legendary Fork Guitar<1a06ff00000d>!
+<1a0680000014>...<1a0680000003><N>I'm sorry.
 
 
 
+<1a0680010001>It's the first time in my life<N>that someone hit on me...
+<1a0680010001>But it doesn't really make me happy<N>since it was that gramps who said it!
+Ooh.
+That girl sure has<N>a strong will.
+<1a0680010001>Well it's true. My colors are<N>different from everyone elses...
+<1a0680010001>And my voice is piercing...
 
+<1a0680010001>If you think i'd be happy to go with you,<N><1a0680010001>then you're making a big mistake!
 
 
 
 
+<1a0680010003><1a0a8002000103030203>!!<1a0680010002><1a0a8002000000000000>
+My... <1a0680000000>My...<1a0680000003>
+<1a0680000000><1a0680010003><1a0a8002000103030203>My eyes have opened!<1a0680000003><1a0680010002><1a0a8002000000000000>
+I got so hooked up on the technique,<N>so I forgot all about the heart!
+It had nothing to do with the<N>Legedary Fork Guitar!
+Hey!<N>You, the clock girl!
+<1a0680010001>I'm not a clock, I'm a bird.
+<1a0680010001>They're two completely<N>different things!
+What?
+Are you still ticking weird?
+Girls in the city are so difficult.<N>As opposed to a guitar, chup.
+Anyway... I just remembered<N>something important.
+I'm going back to<N>the Backyard!
+You should come<N>along clock girl!
+You too, Chibi-Robo!
+City girl<1a0680000014>...<1a0680000003>
+That's the first time<N>I've been called that<1a0680000014><1a06ff00000d>...<1a0680000003>
+But... T- That doesn't make<N>me happy or anything!
+I came here to search for things<N>that can improve my voice.
+I wonder if there's<N>something here...
+I'm gonna search!
 
+<1a0a8002000103030203><1a0680010003>Ga-ha-ha.<1a0a8002000000000000><1a0680010002>
+But!<N>Maybe that's it!!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Ooh〜 It looks like the tomato<N>sales have increased.
+You have sold %d<N>Bright Red Tomatoes.
+You have sold %d<N>Green Tomatoes.
+Uh-oh, you have mixed<N>%d Mixed Tomatoes.
+You have earned %d<N>Moolah from sales!
+Hm, what is it?
+
+<1a0680010003>Oh!<1a0680010002><N>That's a nice look!
+Just looks ain't all. You gotta have<N>good rhythmic technique too.
+<1a0a8002000102020304><1a0680010003>Rhythm!<1a0a8002000000000000><1a0680010002>
+Unfashionable!
+<1a06ff000004>Touch the strings on the guitar<N>taken out with L or R to strum!<1a06ff00000d>
+When you feel like it or remember<N>it, then play a session with me!
+It'll be a waste<N>if you don't.
+
+
+Best Red Tomato: %d Moolah<N>Best other type: %d Moolah
+Red Tomato: %d Moolah<N>Other type: %d Moolah
+You'll get your<N>payment from me.
+
+
+『Bright Red Tomato』
+『Green Tomato』
+『Mixed Tomato』
+<1a0680010003>△<1a0680010002><N> <N>How many to ship?<N><1a06ff00000b>%02d<1a06ff00000d><N> <N><1a0680010003>▽<1a0680010002>
+<1a0680010003>△<1a0680010002><N> <N>How many to ship?<N><1a06ff00000b>%02d<N><1a06ff00000d> <N><1a0680010003>▼<1a0680010002>
+<1a0680010003>▲<1a0680010002><N> <N>How many to ship?<N><1a06ff00000b>%02d<N><1a06ff00000d> <N><1a0680010003>▽<1a0680010002>
+You canceled.
+<1a06ff00000b>%02d<N><1a06ff00000d>has been shipped.
+
+
+Oops, I forgot something.
+It's thanks to you that the<N>tomatoes have become red!!
+Thank you for everything.
+It's also thanks to my heart<N>that they're burning red!!
+Come play a session with me<N>during the next night!
+
+Well then, let's start<N>the session immediately!
+I'll take the lead<N>in the beginning.
+Then you follow me<N>firmly after that!!
+Alright!<N>That got me warmed up!
+Next up is you Chibi-Robo,<N>take the lead!
+I will follow your<N>lead afterwards!
+
+Ohoho!?
+What's up with that.<N>I thought you were Habanero!
+It's easy to make that mistake<N>when you look like that.
+Do you also like getting<N>yourself hurt in vain?
+Isn't that kinda weird?
+
+You're wearing<N>that outfit again?
+
+I don't do bad things,<N>I only play my guitar.
 You're working late.
 Oh,<N>It's you, Chibi-Robo.
 You sure work hard, it's<N>very admirable.
 
+If you show me that<N>much green<1a068000000a>...
+Then I'll only be able to<N>make green tomatoes.
+
+Green is such a nice color〜
+It's the color of our<N>blessed nature!
+
+Ooh〜<N>That's some stylish clothes〜
+Are you going to swim in<N>the pond with that?
+
+
+
+I also want to try playing the guitar<N>while wearing clothes like that.
+
+
+<1a068000000a>...<1a0680000003>Even so.
+
+
+
+
+Chibi-Robo, come and look.
+That frog is still there.
+
+
+I have a feeling like I've seen<N>frog take human form...<1a068000000a>
+But... Where would I have<N>seen something like that<1a068000000a>...
 
 
 
@@ -473,31 +498,6 @@ You sure work hard, it's<N>very admirable.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+That was such a nice wedding.
+I wanted to join in<N>with my guitar.
+Next time I meet that frog I'll<N>ask him to join for a session!
