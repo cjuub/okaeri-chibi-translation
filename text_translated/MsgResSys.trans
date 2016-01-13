@@ -37,7 +37,7 @@ Slalom challange!
 With the Chibi-Bike you should<N>aim for %ds%02d!
 With the Honk Honk Patrol Car you<N>should aim for %ds%02d!
 Free kick record<1a06ff000003><N>%d<1a06ff00000d> Goal
-
+Fallen Washbowls Record<N><1a06ff000003>%d<1a06ff00000d> Washbowls
 <1a0680010003>GOAL!!!!!!<1a0680010002>
 Cooking Record<N><1a06ff000003>%d<1a06ff00000d> Points
 Butt hit!!<N><1a0680010001>Another <1a06ff000003>%d<1a06ff00000d> butts left.<1a0680010002>
@@ -108,7 +108,7 @@ Vacuum Chip 3
 Vacuum Chip 4
 Outlet
 Chibi-Battery
-
+Washbowl
 Large Key
 Gold Dust Bag
 Dust Bag
@@ -204,18 +204,18 @@ Perhaps it would fit in a large<N>keyhole...?
 What will happen if points are<N>gathered?
 Ripened Delicious Looking Tomato
 Unripe Looking Tomato
-Wedding Ring received from Karl.
-
+Wedding Ring received from Karl
+Karl's Wedding Ring
 Heavy Looking Tool
 
-
+Take notes on the back
 Lucky's Favorite Thing
 Casino Chip...?
 Underpants I Don't Want To Touch
 Perhaps it would fit in a small<N>keyhole...?
 Tomato Not Becoming Red
 Habanero's Precious Mask
-Tasty Burnt Cookie
+Tasty Baked Cookie
 -
 Casino Chip...?
 [NO TRANSLATION NEEDED]
@@ -290,10 +290,10 @@ Hallway Floor
 Hallway Wall
 Keith's Room Floor
 Keith's Room Wall
-
-Keith's Desk
-Keith's Chair
-
+Large Bookshelf
+Kid's Desk
+Kid's Chair
+Revolving Shelf
 Space Rocket
 Mom's Room Floor
 Mom's Room Wall
@@ -317,7 +317,7 @@ Chibi-Pinwheel 3
 Chibi-Pinwheel 4
 
 Flat Object
-
+Heavy Object
 Bent Object
 
 Taste Rich Object
@@ -358,14 +358,14 @@ Steamy Object
 Comfortable Object
 Fluttering Object
 
-Welcome to Chibi-Computer!
+Welcome to the Chibi-Computer!
 Come back again〜!
 Chibi-Training
 Chibi-Robo Manual
 Wonder Timer
 Happy Loan
 Check Cleanliness
-
+Washbowl Record
 Staff Credits
 Load
 
@@ -381,8 +381,8 @@ Something just got in<N><1a06ff000003>stock<1a06ff00000d>!
 <1a06ff000009>%s<1a06ff00000d> is<N>now in <1a06ff000003>stock<1a06ff00000d>!
 ＜%s＞<N>Cleanliness right now: <1a06ff000003>%d<1a06ff00000d>％.<N>Best Cleanliness: %d％.
 
-
-
+<1a06ff000003>%d<1a06ff00000d> Washbowls<N>＜Record: %d Washbowls＞
+Fallen Washbowls Record<N>%d Washbowls<N>▼<N><1a06ff000003>%d<1a06ff00000d> Washbowls
 
 *Ti<1a078004000a00>ck* <1a078004000a00>*Ti<1a078004000a00>ck* <1a078004000a00>*Ti<1a078004000a00>ck*!
 *Ding*!
@@ -454,11 +454,11 @@ Thank you for<N>your purchase.
 Welcome.
 I'm stuffed<1a068000000a>...<1a0680000003>
 
-
-
+The results will be reported<N>back to you later.
+We're looking forward<N>to your next visit.
 Please wait a bit longer.
 
-The Chibi-Pinwheels has<N>generated <1a06ff000005>%d<1a06ff00000d> Watts!
+The Chibi-Pinwheels have<N>generated <1a06ff000005>%d<1a06ff00000d> Watts!
 
 ???
 Chibi-Watts
@@ -604,43 +604,43 @@ Chibi-Robo training<N><1a0680010003>【Telly Marks】<1a0680010002>
 Can you clean up the Dust...
 That is found over there!?
 
+「Weird Dark<N>and Round Guy」
+「Beautiful Guitar Melody」
 
 
 
+「Becomes a flower when<N>sprayed with water」
+In order to pull and push...
+Get close to the knob<N>of the drawer...
+Then when 「!」 appears,<N>touch the drawer...
+Doing that will allow you to<N>pull it back and forth.
+Also...
+You can open and close doors<N>to the left and right.
+When your Plug is inserted<N>into an Outlet...
+And you jump off the<N>edge of a high place...
+Then the cord can be used as<N>a rope to climb up and down.
+Also...
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In order to throw the Plug...
+Start by picking up the Plug...
+Then hold the<N>L or R button...
+After a short while the plug<N>will start spinning around.
+When that happens...
+Touch in the direction you want to<N>throw it and it will fly away.
+Also...
+The Plug can be inserted into an<N>Outlet by throwing it at it.
+When being close<N>to a Telly Mark...
+Then touch it when<N>the 「!」 appears...
+This will can give you<N>control of Telly!
+And then...
+You will be able to move Telly to<N>any location or Outlet...
+And when touching the Chibi-Robo<N>icon in the upper right corner...
+You will gain control<N>of Chibi-Robo again!
+In order to clean up Dirt...
+First, equip the Toothbrush.
+Then press the L or R button to<N>use it, and the stylus to scrub.
 
 
 
@@ -712,8 +712,8 @@ Chibi-Watts
 
 <1a068000000a>Chibi-Robo<1a0680000014>...
 <1a068000000a>You've passed out from running<N>out of Watts <1a06ff000003>%d<1a06ff00000d> times.
-
-
+<1a068000000a>You've gathered<N><1a06ff000005>%d<1a06ff00000d> Happy Points<N> <N>You've gathered<N><1a06ff000005>%d<1a06ff00000d> Rich Points
+<1a068000000a>You've found<N><1a06ff000003>%d<1a06ff00000d> Jewels<N> <N>You've dropped<N><1a06ff000003>%d<1a06ff00000d> Jewels
 <1a068000000a>You've earned <1a06ff000003>%d<1a06ff00000d> Greed<N>from the Casino...
 <1a068000000a>By moving around here for<N><1a06ff000003>%d<1a06ff00000d> hours and <1a06ff000003>%d<1a06ff00000d> minutes<1a0680000014>...<1a0680000003>
 <1a068000000a>In total you have<N>consumed <1a06ff000003>%d<1a06ff00000d> Watts.
@@ -736,7 +736,7 @@ Now saving.<N>Please do not turn of the power<N>or remove the game card.
 <1a06ff000004><1a0680000000>＜Habanero's toy box＞<N>Length: 10cm<N>Favorite food: Spicy things.<N>Weak point: Water.<N>Special skill: Habanero Chop.<N>※Swells up if soaked in water.<1a0680000003>
 <1a06ff000004><1a0680000000>＜Acappella's toy box＞<N>Length: 17cm<N>Type: Alarm clock.<N>Yearning: The big city.<N>Pride: Voice.<N>※Warning for noisy sounds.<1a0680000003>
 <1a06ff000004><1a0680000000>＜Iberico's toy box＞<N>Length: 19cm<N>Dream: Become a Super Policeman.<N>Beloved car: Oink Oink Patrol Car.<N>Strong point: Fast eating.<N>※Start the sirens!<1a0680000003>
-<1a06ff000004><1a0680000000>＜Ketchup's toy box＞<N>Length: 21cm<N>Strong point: Growing tomatos.<N>Favorite place: Gardens with soil.<N>Pride: Guitar technique.<N>Common phrase: 〜だべ<1a0680000003>
+<1a06ff000004><1a0680000000>＜Ketchup's toy box＞<N>Length: 21cm<N>Strong point: Growing tomatos.<N>Favorite place: Gardens with soil.<N>Pride: Guitar technique.<N>Common phrase: 〜chup<1a0680000003>
 
 <1a0680000006>STAFF CREDITS
 <1a0680000006>DIRECTOR<N><N>Hiroshi Moriyama
@@ -758,7 +758,7 @@ Now saving.<N>Please do not turn of the power<N>or remove the game card.
 <1a0680000003>All Rights,<N>including the copyrights of Game,<N>Scenario, Music and Program<N>reserved by Nintendo, except those<N>copyrights of the Character <N>CHIBIROBO reserved by Nintendo,<N>BANDAI/NBGI and SKIP.
 
 Take off in the Chibi-Airplane?
+*Brum* <1a078004000a00>*Brum* <1a078004000a00>*Brum*<N><1a078004000a00>*Brum* <1a078004000a00>*Brum*<1a068000000a>...<1a0680000003>!
+<1a0680010003>【Chibi-Airplane】<1a0680010002><N><1a06ff000004>Use L or R button to shoot.<N>1 hit equals 1 Moolah...?
 
-<1a0680010003>【Chibi-Airplane】<1a0680010002><N><1a06ff000004>Use L and R buttons to shoot.<N>1 hit equals 1 Moolah...?
-
-
+<1a0680010003>【Don De Niro Battle】<1a0680010002><N><1a06ff000004>Take back %d Moolah!
