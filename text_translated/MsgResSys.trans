@@ -711,13 +711,13 @@ Dust Bag
 Chibi-Watts
 
 <1a068000000a>Chibi-Robo<1a0680000014>...
-<1a068000000a>You've passed out from running<N>out of Watts <1a06ff000003>%d<1a06ff00000d> times.
-<1a068000000a>You've gathered<N><1a06ff000005>%d<1a06ff00000d> Happy Points<N> <N>You've gathered<N><1a06ff000005>%d<1a06ff00000d> Rich Points
-<1a068000000a>You've found<N><1a06ff000003>%d<1a06ff00000d> Jewels<N> <N>You've dropped<N><1a06ff000003>%d<1a06ff00000d> Jewels
-<1a068000000a>You've earned <1a06ff000003>%d<1a06ff00000d> Greed<N>from the Casino...
+<1a068000000a>You passed out from running<N>out of Watts <1a06ff000003>%d<1a06ff00000d> times.
+<1a068000000a>You gathered<N><1a06ff000005>%d<1a06ff00000d> Happy Points<N> <N>You gathered<N><1a06ff000005>%d<1a06ff00000d> Rich Points
+<1a068000000a>You found<N><1a06ff000003>%d<1a06ff00000d> Jewels<N> <N>You dropped<N><1a06ff000003>%d<1a06ff00000d> Jewels
+<1a068000000a>You earned <1a06ff000003>%d<1a06ff00000d><N>Greed from the Casino...
 <1a068000000a>By moving around here for<N><1a06ff000003>%d<1a06ff00000d> hours and <1a06ff000003>%d<1a06ff00000d> minutes<1a0680000014>...<1a0680000003>
-<1a068000000a>In total you have<N>consumed <1a06ff000003>%d<1a06ff00000d> Watts.
-<1a068000000a>You've made everyone in<N>Jenny's family happy.<1a0680000003>
+<1a068000000a>In total you consumed<N><1a06ff000003>%d<1a06ff00000d> Watts.
+<1a068000000a>You made everyone in<N>Jenny's family happy.<1a0680000003>
 
 <1a06ff000004>Performing initial preparations.<N>Please do not turn off the power<N>or remove the game card.
 Copying data.<N>Please do not turn off the power<N>or remove the game card.
