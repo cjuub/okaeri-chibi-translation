@@ -663,27 +663,27 @@ Draw cards to go as close as<N>possible to the sum of <1a06ff000003>21<1a06ff000
 <1a06ff000004>☆Personal Records☆<1a06ff00000d><N>BLACK JACK [<1a06ff000005>%d<1a06ff00000d>] Times
 
 <1a06ff000004>☆Basic Rules☆<1a06ff00000d><N>Contend with the dealer by<N>arranging the cards!<N>Win by having stronger cards<N>than your opponent!
+Does the dealer have a bad hand?<N>Maybe it's your chance to win!?
+<1a06ff000004>☆Hand Types☆<1a06ff00000d><N>[2x]<1a06ff000003> 1 Pair<1a06ff00000d><N>Two cards of the same value.<N> <N>[3x]<1a06ff000003> 2 Pairs<1a06ff00000d><N>Two cards of the same value,<N>two of them.
+[4x]<1a06ff000003> 3 of a Kind<1a06ff00000d><N>Three cards of the same value.<N> <N>[5x]<1a06ff000003> Straight<1a06ff00000d><N>Every card is sequential<N>in value.
+[6x]<1a06ff000003> Flush<1a06ff00000d><N>All cards in the same suit.<N> <N>[8x]<1a06ff000003> Full House<1a06ff00000d><N>Three cards of the same value, and<N>two other cards of the same value.
+[21x]<1a06ff000003> 4 of a Kind<N><1a06ff00000d>Four cards of the same value.<N> <N>[51x]<1a06ff000003> Straight Flush<1a06ff00000d><N>Every card is sequential in value,<N>and of the same suit.
+[101x]<1a06ff000003> Royal Flush<1a06ff00000d><N>The cards 10 - J - Q - K - A,<N>all in the same suit.
 
 
 
 
 
+<1a06ff000004>☆Records☆<1a06ff00000d><N>1 Pair [<1a06ff000005>%d<1a06ff00000d>] Times<N>2 Pairs [<1a06ff000005>%d<1a06ff00000d>] Times<N>3 of a Kind [<1a06ff000005>%d<1a06ff00000d>] Times<N>Straight [<1a06ff000005>%d<1a06ff00000d>] Times
+Flush [<1a06ff000005>%d<1a06ff00000d>] Times<N>Full House [<1a06ff000005>%d<1a06ff00000d>] Times<N>4 of a Kind [<1a06ff000005>%d<1a06ff00000d>] Times<N>Straight Flush [<1a06ff000005>%d<1a06ff00000d>] Times<N>Royal Flush [<1a06ff000005>%d<1a06ff00000d>] Times
 
-
-
-
-
-
-
-
-
-
-
+<1a06ff000004>☆Basic Rules☆<1a06ff00000d><N>Bet on 5 different Ghosts. If you<N>get it right, you'll earn Greed.<N>It's a simple roulette!
+<1a06ff000004>☆How to Bet☆<1a06ff00000d><N>Just touch the Ghost design<N>that you want to bet on.
 <1a06ff000004>☆Bet☆<1a06ff00000d><N>One touch bets <1a06ff000009>100 Greed<1a06ff00000d> when<N>available, otherwise <1a06ff00000b>100 Moolah<1a06ff00000d>.<N> <N>You can bet up to 500 Greed on<N>each of the different types.
-
-
-
-
+<1a06ff000003>! WARNING !<N>You won't be able to bet<N>while the roulette is moving.<N> <N>It will not move for long so<N>please wait for it to finish.
+<1a06ff000004>☆Ghost Design Types☆<1a06ff00000d><N>[<1a06ff000005>2x<1a06ff00000d>] Casino Ghost<N>[Probability] 1/2<N> <N>[<1a06ff000005>4x<1a06ff00000d>] Clown Ghost<N>[Probability] 1/4
+[<1a06ff000005>8x<1a06ff00000d>] Daddy Ghost<N>[Probability] 1/8<N> <N>[<1a06ff000005>16x<1a06ff00000d>] Don Ghost<N>[Probability] 1/16
+[<1a06ff000005>?x<1a06ff00000d>] Busty Ghost<N>[Probability] 1/16<N><1a06ff000003>! Can be between 2-32x !
 
 <1a06ff000004>You got secret savings.
 <1a06ff000004>Empty.
