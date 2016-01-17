@@ -207,7 +207,7 @@ Unripe Looking Tomato
 Wedding Ring received from Karl
 Karl's Wedding Ring
 Heavy Looking Tool
-
+Fire That Makes You Numb
 Take notes on the back
 Lucky's Favorite Thing
 Casino Chip...?
@@ -319,7 +319,7 @@ Chibi-Pinwheel 4
 Flat Object
 Heavy Object
 Bent Object
-
+Warm and Fuzzy Object
 Taste Rich Object
 Clownfish
 A Somewhat Warm Object
@@ -331,16 +331,16 @@ Warm Object
 Fat Object
 Tight Object
 Light Object
-
+Dry Object
 Flat Object
 Heavy Object
 Flat Object
 Heavy Object
 Bulged Object
-
-
+Clear Object
+Empty Object
 Distinct Object
-
+Unexpected Object
 Flat Object
 Heavy Object
 Sticky Object
@@ -447,7 +447,7 @@ The item number<N>is incorrect.
 Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06ff00000d> Moolah<N>It's currently sold out.
 Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06ff00000d> Moolah<N> <N>Buy it with 「<1a06ff000003>＃<1a06ff00000d>」<N>Cancel with 「＊」
 Article No. %02d<N>「<1a06ff000009>%s<1a06ff00000d>」<N><1a06ff00000b>%d<1a06ff00000d> Moolah<N>You don't have enough Moolah.
-
+[NO TRANSLATION NEEDED]
 Thank you for<N>your purchase.
 
 <1a06ff000004>Spin it around with the stylus!
@@ -604,11 +604,11 @@ Chibi-Robo training<N><1a0680010003>【Telly Marks】<1a0680010002>
 Can you clean up the Dust...
 That is found over there!?
 
-「Weird Dark<N>and Round Guy」
+「Weird Dark and<N>Round Guy」
 「Beautiful Guitar Melody」
-
-
-
+「Come Tottering」
+「Oh that's strange」
+「Become a sprout<N>at the X」
 「Becomes a flower when<N>sprayed with water」
 In order to pull and push...
 Get close to the knob<N>of the drawer...
@@ -669,11 +669,11 @@ Does the dealer have a bad hand?<N>Maybe it's your chance to win!?
 [6x]<1a06ff000003> Flush<1a06ff00000d><N>All cards in the same suit.<N> <N>[8x]<1a06ff000003> Full House<1a06ff00000d><N>Three cards of the same value, and<N>two other cards of the same value.
 [21x]<1a06ff000003> 4 of a Kind<N><1a06ff00000d>Four cards of the same value.<N> <N>[51x]<1a06ff000003> Straight Flush<1a06ff00000d><N>Every card is sequential in value,<N>and of the same suit.
 [101x]<1a06ff000003> Royal Flush<1a06ff00000d><N>The cards 10 - J - Q - K - A,<N>all in the same suit.
-
-
-
-
-
+[--]<1a06ff000003>AK(Ace-King)<1a06ff00000d><N>A-K<N>※Hand only useful for the dealer.<N> <N><1a06ff000004>It's the weakest Hand available.<N>If you have a Hand, use it!
+<1a06ff000004>☆Touch Types☆<1a06ff00000d><N><1a06ff000003>[FOLD]<1a06ff00000d><N>Pay the Ante and give up.
+<1a06ff000003>[BET]<1a06ff00000d><N>Stake the Ante x2 and contend!<N>If you win against the dealer,<N>then you'll get <1a06ff000005>Ante x2<1a06ff00000d> and<N><1a06ff000005>BET x Hand Multiplier<1a06ff00000d> Greed!
+<1a06ff000004>☆Play Fee Types☆<1a06ff00000d><N><1a06ff000003>[Ante]<1a06ff00000d><N>The Greed used to start the game.<N>After a game, if the dealer has<N>no Hand, you'll get <1a06ff000005>Ante x2<1a06ff00000d>!
+<1a06ff000003>[BET Fee]<1a06ff00000d><N>The Ante x2 Greed.<N>Be sure to pay it during the game.
 <1a06ff000004>☆Records☆<1a06ff00000d><N>1 Pair [<1a06ff000005>%d<1a06ff00000d>] Times<N>2 Pairs [<1a06ff000005>%d<1a06ff00000d>] Times<N>3 of a Kind [<1a06ff000005>%d<1a06ff00000d>] Times<N>Straight [<1a06ff000005>%d<1a06ff00000d>] Times
 Flush [<1a06ff000005>%d<1a06ff00000d>] Times<N>Full House [<1a06ff000005>%d<1a06ff00000d>] Times<N>4 of a Kind [<1a06ff000005>%d<1a06ff00000d>] Times<N>Straight Flush [<1a06ff000005>%d<1a06ff00000d>] Times<N>Royal Flush [<1a06ff000005>%d<1a06ff00000d>] Times
 
