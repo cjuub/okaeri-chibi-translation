@@ -118,6 +118,8 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 						modify_oam = true;
 					}
 				}
+			} else {
+				modify_oam = true;
 			}
 
 			for (int y = 0; y < height; y += 8) {
