@@ -114,12 +114,10 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 			bool modify_oam = false;
 			if (meta_exists) {
 				for (auto it = oams_change.begin(); it != oams_change.end(); ++it) {
-					if (*it == j) {
+					if (*it == nbr_oams[i] - 1 - j) { // oams seem to be in reverse order compared to tinke?
 						modify_oam = true;
 					}
 				}
-			} else {
-				modify_oam = false;
 			}
 
 			for (int y = 0; y < height; y += 8) {
@@ -131,7 +129,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 							int img_y = img_offs_y + oam_y + tileY + y;
 							int pos = img_x * 4 + img_y * img_w * 4;
 
-							if (exists && !modify_oam && img_x >= x_min && img_x <= x_max && img_y >= y_min && img_y <= y_max) {
+							if (exists && modify_oam && img_x >= x_min && img_x <= x_max && img_y >= y_min && img_y <= y_max) {
 								tile_data_mod[tile_data_index] = image[pos];
 							} else {
 								tile_data_mod[tile_data_index] = ncgr.get_tile_data()[tile_data_index];
