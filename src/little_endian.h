@@ -40,4 +40,8 @@ inline void write_little_endian_16(std::ofstream& ofs, uint16_t val) {
 	ofs << static_cast<char>((val >> 8) & 0xFF);
 }
 
+inline void write_little_endian_8(std::ofstream& ofs, uint8_t val) {
+	ofs << static_cast<char>(val);
+}
+
 #endif

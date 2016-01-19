@@ -12,6 +12,8 @@ void NCGR::load_tiles(std::string& in_file) {
 	ifstream ifs(in_file);
 	char b;
 
+	ifs.seekg(0x8);
+	file_size = read_little_endian_32(ifs);
 	ifs.seekg(0x1C);
 	read_little_endian_32(ifs); // bit_depth
 	read_little_endian_16(ifs); // height
@@ -19,12 +21,13 @@ void NCGR::load_tiles(std::string& in_file) {
 	ifs.get(b); // not_tiled
 	ifs.get(b); // is_partitioned
 	read_little_endian_16(ifs);
-	read_little_endian_32(ifs); // data_size
+	uint32_t data_size = read_little_endian_32(ifs); // data_size
 	read_little_endian_32(ifs); // data_offs
 
-	int i = 0;
-	while (ifs.get(b)) {
+	unsigned i = 0;
+	while (i != data_size) {
 		i++;
+		ifs.get(b);
 		tile_data.push_back(static_cast<uint8_t>(b));
 	}
 
@@ -43,14 +46,26 @@ void NCGR::save(std::string& out_file, std::vector<uint8_t>& tile_data_mod) {
 	ifstream ifs(file_name);
 	ofstream ofs(out_file);
 
-	while (ifs.tellg() != 0x30) {
-		ofs << static_cast<uint8_t>(ifs.get());
-	}
+	uint32_t size_diff = tile_data_mod.size() - tile_data.size();
 
-	for (unsigned int i = 0; i < tile_data_mod.size(); ++i) {
-		ofs << static_cast<uint8_t>(tile_data_mod[i]);
+	copy_until(ifs, ofs, 0x8);
+	write_little_endian_32(ofs, read_little_endian_32(ifs) + size_diff);
+	copy_until(ifs, ofs, 0x14);
+	write_little_endian_32(ofs, read_little_endian_32(ifs) + size_diff);
+	copy_until(ifs, ofs, 0x28);
+	write_little_endian_32(ofs, read_little_endian_32(ifs) + size_diff);
+	copy_until(ifs, ofs, 0x30);
+
+	for (unsigned i = 0; i < tile_data_mod.size(); ++i) {
+		write_little_endian_8(ofs, tile_data_mod[i]);
 	}
 
 	ofs.close();
 	ifs.close();
+}
+
+void NCGR::copy_until(ifstream& ifs, ofstream& ofs, int pos) {
+	while (ifs.tellg() != pos) {
+		ofs << static_cast<uint8_t>(ifs.get());
+	}
 }
