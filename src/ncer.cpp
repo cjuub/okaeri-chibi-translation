@@ -47,6 +47,8 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 	vector<uint16_t> oam_data_mod;
 	oam_data_mod.resize(oam_data.size());
 
+	int nbr_custom_oam = 0;
+
 	for (unsigned int i = 0; i != nbr_banks; ++i) {
 		int width;
 		int height;
@@ -88,7 +90,9 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int oam_y_shift;
 
 		bool has_custom_oam = false;
+		bool custom_only_position = false;
 		vector<int> oams_change;
+		
 		if (meta_exists) {
 			string line;
 			getline(meta, line);
@@ -107,6 +111,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 			if (getline(meta, line)) {
 				istringstream extend_info(line);
 				has_custom_oam = true;
+				extend_info >> custom_only_position;
 				extend_info >> custom_oam_tile;
 				extend_info >> oam_x_shift;
 				extend_info >> oam_y_shift;
@@ -148,35 +153,42 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 				}
 
 				if (has_custom_oam && modify_oam) {
-					obj_atr_0 |= 1 << 14;
-					obj_atr_0 &= ~(1 << 15);
+					if (!custom_only_position) {
+						obj_atr_0 |= 1 << 14;
+						obj_atr_0 &= ~(1 << 15);
 
-					obj_atr_1 &= ~(1 << 14);
-					obj_atr_1 |= 1 << 15;
+						obj_atr_1 &= ~(1 << 14);
+						obj_atr_1 |= 1 << 15;
 
-					// 1 tile index includes 2 consecutive tiles
-					int CUSTOM_SIZE = 8 / 2; // 32x16 = 8 tiles
-					tile_index = (ncgr.get_tile_data().size()  / (8 * 8 * 2)) + custom_oam_tile * CUSTOM_SIZE;
-					obj_atr_2 &= 0xFC00;
-					obj_atr_2 += tile_index;
+						// 1 tile index includes 2 consecutive tiles
+						int CUSTOM_SIZE = 8 / 2; // 32x16 = 8 tiles
+						tile_index = (ncgr.get_tile_data().size() / (8 * 8 * 2)) + custom_oam_tile * CUSTOM_SIZE;
+						obj_atr_2 &= 0xFC00;
+						obj_atr_2 += tile_index;
+	
+						width = 32;
+						height = 16;
+					}
 
-
-					oam_x += static_cast<int16_t>(oam_x_shift);
-					oam_y += static_cast<int16_t>(oam_y_shift);
+					// OAM Y HERE
 
 					obj_atr_1 &= 0xFE00;
-					obj_atr_1 += static_cast<uint16_t>(oam_x & 0x01FF);
+					obj_atr_1 += static_cast<uint16_t>((oam_x + oam_x_shift) & 0x01FF);
 
 					oam_data_mod[offs + j * 3] = obj_atr_0;
 					oam_data_mod[offs + j * 3 + 1] = obj_atr_1;
 					oam_data_mod[offs + j * 3 + 2] = obj_atr_2;
-
-					width = 32;
-					height = 16;
 				}
-
 			} else {
 				modify_oam = true;
+			}
+
+			bool create_oam = false;
+			if (exists && modify_oam && has_custom_oam && !custom_only_position) {
+				create_oam = nbr_custom_oam <= custom_oam_tile;
+				if (create_oam) {
+					++nbr_custom_oam;
+				}
 			}
 
 			for (int y = 0; y < height; y += 8) {
@@ -189,11 +201,14 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 							int pos = img_x * 4 + img_y * img_w * 4;
 
 							if (exists && modify_oam && has_custom_oam) {
-								img_x = x_min + tileX + x;
-								img_y = y_min + tileY + y;
-								pos = img_x * 4 + img_y * img_w * 4;
-
-								tile_data_mod.push_back(image[pos]);
+								if (create_oam) {
+									img_x = x_min + tileX + x;
+									img_y = y_min + tileY + y;
+									pos = img_x * 4 + img_y * img_w * 4;
+									tile_data_mod.push_back(image[pos]);
+								} else {
+									tile_data_mod[tile_data_index] = image[pos];
+								}
 							} else if (exists && modify_oam && img_x >= x_min && img_x <= x_max && img_y >= y_min && img_y <= y_max) {
 								tile_data_mod[tile_data_index] = image[pos];
 							} else {
