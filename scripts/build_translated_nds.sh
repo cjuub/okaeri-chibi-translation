@@ -20,9 +20,10 @@ echo -n "Generating BMG from translated texts...";
 cp ./tmp/bmg_translated/* ./tmp/out/data/
 echo " Done!";
 
-echo -n "Generating NCGR from translated images..."
+echo -n "Generating NCGR/NCER from translated images..."
 ./scripts/update_ncgr_translated.sh
 cp ./tmp/ncgr_translated/* ./tmp/out/data/2d/
+cp ./tmp/ncer_translated/* ./tmp/out/data/2d/
 echo " Done!";
 
 echo -n "Repacking files into ROM..."

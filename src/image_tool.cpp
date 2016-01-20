@@ -25,7 +25,8 @@ int main(int argc, char* argv[]) {
 		nscr.extract_image(ncer_file, ncgr, bmp_folder);
 	} else if (option == "-i") {
 		string ncgr_out(argv[5]);
-		ncer.insert_cells(ncer_file, ncgr, bmp_folder, ncgr_out);
+		string ncer_out(argv[6]);
+		ncer.insert_cells(ncer_file, ncgr, bmp_folder, ncgr_out, ncer_out);
 	} else if (option == "-i2") {
 		string ncgr_out(argv[5]);
 		nscr.insert_image(ncer_file, ncgr, bmp_folder, ncgr_out);

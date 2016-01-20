@@ -2,6 +2,7 @@
 
 mkdir -p ./tmp
 mkdir -p ./tmp/ncgr_translated
+mkdir -p ./tmp/ncer_translated
 
 for i in ./ncer_image_translated/* ; do
     if [ $(basename "$i") == "LICENSE" ]; then
@@ -21,7 +22,7 @@ for i in ./ncer_image_translated/* ; do
         eval "./png_merge ./ncer_image_original/"$name2 "./ncer_image_translated/"$name2 "./tmp/"$name2;
     done
 
-    eval "./image_tool -i ./tmp/nxxx_original/"$(basename "$name")".NCGR" "./tmp/nxxx_original/"$(basename "$name")".NCER" "./tmp/"$(basename "$name") "./tmp/ncgr_translated/"$(basename "$name")".NCGR";
+    eval "./image_tool -i ./tmp/nxxx_original/"$(basename "$name")".NCGR" "./tmp/nxxx_original/"$(basename "$name")".NCER" "./tmp/"$(basename "$name") "./tmp/ncgr_translated/"$(basename "$name")".NCGR" "./tmp/ncer_translated/"$(basename "$name")".NCER";
 done
 
 for i in ./nscr_image_translated/* ; do

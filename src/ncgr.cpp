@@ -63,9 +63,3 @@ void NCGR::save(std::string& out_file, std::vector<uint8_t>& tile_data_mod) {
 	ofs.close();
 	ifs.close();
 }
-
-void NCGR::copy_until(ifstream& ifs, ofstream& ofs, int pos) {
-	while (ifs.tellg() != pos) {
-		ofs << static_cast<uint8_t>(ifs.get());
-	}
-}

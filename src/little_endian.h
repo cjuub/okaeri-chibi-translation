@@ -44,4 +44,10 @@ inline void write_little_endian_8(std::ofstream& ofs, uint8_t val) {
 	ofs << static_cast<char>(val);
 }
 
+inline void copy_until(std::ifstream& ifs, std::ofstream& ofs, int pos) {
+	while (ifs.tellg() != pos) {
+		ofs << static_cast<uint8_t>(ifs.get());
+	}
+}
+
 #endif
