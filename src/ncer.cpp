@@ -166,8 +166,8 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 						obj_atr_2 &= 0xFC00;
 						obj_atr_2 += tile_index / TILE_INDEX_MULTIPLIER;
 
-						if (static_cast<unsigned>(tile_index * 8 * 8) >= tile_data_mod.size()) {
-							tile_data_mod.resize(tile_data_mod.size() + 8 * 8 * 8);
+						while (static_cast<unsigned>(tile_index * 8 * 8) >= tile_data_mod.size()) {
+							tile_data_mod.resize(tile_data_mod.size() + 8 * 8 * CUSTOM_SIZE);
 						}
 					}
 
