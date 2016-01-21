@@ -14,6 +14,8 @@ public:
 	void write_bmp(std::vector<std::vector<uint8_t>>& img_data, int width, int height, std::string& id);
 	void save(std::string& ncer_out, std::vector<uint16_t>& oam_data_mod);
 private:
+	const int TILE_INDEX_MULTIPLIER = 2;
+
 	std::string file_name;
 	uint16_t nbr_banks;
 	std::vector<uint16_t> nbr_oams;
