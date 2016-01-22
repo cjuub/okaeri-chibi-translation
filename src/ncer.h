@@ -12,7 +12,7 @@ public:
 	void insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_folder, std::string& out_file, std::string& ncer_out);
 	void extract_cells(std::string& in_file, NCGR& ncgr, std::string& out_folder);
 	void write_bmp(std::vector<std::vector<uint8_t>>& img_data, int width, int height, std::string& id);
-	void save(std::string& ncer_out, std::vector<uint16_t>& oam_data_mod);
+	void save(std::string& ncer_out, std::vector<uint16_t>& oam_data_mod, std::vector<uint16_t>& nbr_oams);
 private:
 	const int TILE_INDEX_MULTIPLIER = 2;
 
@@ -28,6 +28,7 @@ private:
 								{{64, 64}, {64, 32}, {32, 64}}};
 
 	int oam_start_addr;
+	unsigned nbr_new_oams;
 };
 
 #endif

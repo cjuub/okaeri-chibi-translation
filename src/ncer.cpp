@@ -14,6 +14,7 @@ NCER::NCER() {}
 
 void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_folder, std::string& ncgr_out, std::string& ncer_out) {
 	file_name = ncer_file;
+	nbr_new_oams = 0;
 
 	ifstream ifs(ncer_file);
 
@@ -50,7 +51,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 	for (unsigned int i = 0; i != nbr_banks; ++i) {
 		int width;
 		int height;
-		uint32_t offs = oam_offsets[i] / 2;
+		uint32_t offs = oam_offsets[i] / 2 + nbr_new_oams * 3;
 		unsigned img_w = 512;
 		unsigned img_h = 256;
 		int img_offs_x = img_w / 2;
@@ -86,6 +87,10 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int custom_oam_tile;
 		int oam_x_shift;
 		int oam_y_shift;
+		int oam_to_replace;
+		int custom_nbr_new_oam = 0;
+		int custom_x = 0;
+		int custom_y = 0;
 
 		bool has_custom_oam = false;
 		bool custom_only_pos = false;
@@ -113,19 +118,33 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 				extend_info >> custom_oam_tile;
 				extend_info >> oam_x_shift;
 				extend_info >> oam_y_shift;
+				extend_info >> oam_to_replace;
+				extend_info >> custom_nbr_new_oam;
+				extend_info >> custom_x;
+				extend_info >> custom_y;
+				if (custom_nbr_new_oam) {
+					nbr_oams[i] += custom_nbr_new_oam;
+					nbr_new_oams += custom_nbr_new_oam;
+
+					uint16_t obj_atr_0 = oam_data[offs];
+					uint16_t obj_atr_1 = oam_data[offs + 1];
+					uint16_t obj_atr_2 = oam_data[offs + 2];
+
+					oam_data.insert(oam_data.begin() + offs, 1, obj_atr_2);
+					oam_data.insert(oam_data.begin() + offs, 1, obj_atr_1);
+					oam_data.insert(oam_data.begin() + offs, 1, obj_atr_0);
+					
+				}
 			}
 		}
 
 		meta.close();
 
+
 		for (int j = nbr_oams[i] - 1; j != -1; --j) {
 			uint16_t obj_atr_0 = oam_data[offs + j * 3];
 			uint16_t obj_atr_1 = oam_data[offs + j * 3 + 1];
 			uint16_t obj_atr_2 = oam_data[offs + j * 3 + 2];
-
-			oam_data_mod[offs + j * 3] = obj_atr_0;
-			oam_data_mod[offs + j * 3 + 1] = obj_atr_1;
-			oam_data_mod[offs + j * 3 + 2] = obj_atr_2;
 
 			int shape = (obj_atr_0 & 0xC000) >> 14;
 			int size = (obj_atr_1 & 0xC000) >> 14;
@@ -143,6 +162,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 			int8_t oam_y = obj_atr_0 & 0xFF;
 
 			bool modify_oam = false;
+			int custom_shift = 0;
 			if (meta_exists) {
 				for (auto it = oams_change.begin(); it != oams_change.end(); ++it) {
 					if (*it == nbr_oams[i] - 1 - j) { // oams seem to be in reverse order compared to tinke?
@@ -151,17 +171,24 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 				}
 
 				if (has_custom_oam && modify_oam) {
-					if (!custom_only_pos) {
-						// Creates a new OAM with size 32x16
-						width = 32;
+					if (!custom_only_pos && oam_to_replace == nbr_oams[i] - 1 - j) {
+						// Creates a new OAM with size 16x16
+						width = 16;
 						height = 16;
 
-						obj_atr_0 |= 1 << 14;
-						obj_atr_0 &= ~(1 << 15);
-						obj_atr_1 &= ~(1 << 14);
-						obj_atr_1 |= 1 << 15;
+						// Horizontal 32x16
+						// obj_atr_0 |= 1 << 14;
+						// obj_atr_0 &= ~(1 << 15);
+						// obj_atr_1 &= ~(1 << 14);
+						// obj_atr_1 |= 1 << 15;
 
-						int CUSTOM_SIZE = 8; // 32x16 = 8 tiles
+						// Square 16x16
+						obj_atr_0 &= ~(1 << 14);
+						obj_atr_0 &= ~(1 << 15);
+						obj_atr_1 |= 1 << 14;
+						obj_atr_1 &= ~(1 << 15);
+
+						int CUSTOM_SIZE = 4; // 16x16 = 4 tiles
 						tile_index = (ncgr.get_tile_data().size() / (8 * 8)) + custom_oam_tile * CUSTOM_SIZE;
 						obj_atr_2 &= 0xFC00;
 						obj_atr_2 += tile_index / TILE_INDEX_MULTIPLIER;
@@ -169,6 +196,14 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 						while (static_cast<unsigned>(tile_index * 8 * 8) >= tile_data_mod.size()) {
 							tile_data_mod.resize(tile_data_mod.size() + 8 * 8 * CUSTOM_SIZE);
 						}
+
+						oam_x = custom_x;
+						oam_y = custom_y;
+
+						obj_atr_0 &= 0xFF00;
+						obj_atr_0 += static_cast<uint16_t>(custom_y & 0x00FF);
+						obj_atr_1 &= 0xFE00;
+						obj_atr_1 += static_cast<uint16_t>(custom_x & 0x01FF);
 					}
 
 					// OAM Y HERE
@@ -176,9 +211,10 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 					obj_atr_1 &= 0xFE00;
 					obj_atr_1 += static_cast<uint16_t>((oam_x + oam_x_shift) & 0x01FF);
 
-					oam_data_mod[offs + j * 3] = obj_atr_0;
-					oam_data_mod[offs + j * 3 + 1] = obj_atr_1;
-					oam_data_mod[offs + j * 3 + 2] = obj_atr_2;
+
+					oam_data[offs + j * 3] = obj_atr_0;
+					oam_data[offs + j * 3 + 1] = obj_atr_1;
+					oam_data[offs + j * 3 + 2] = obj_atr_2;
 				}
 			} else {
 				modify_oam = true;
@@ -189,7 +225,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 					for (int tileY = 0; tileY < 8; tileY++) {
 						for (int tileX = 0; tileX < 8; tileX++) {
 							int tile_data_index = tile_index * 8 * 8 + x * 8 + tileX + y * width + tileY * 8;
-							int img_x = img_offs_x + oam_x + tileX + x;
+							int img_x = img_offs_x + oam_x + tileX + x + custom_shift;
 							int img_y = img_offs_y + oam_y + tileY + y;
 							int pos = img_x * 4 + img_y * img_w * 4;
 
@@ -205,7 +241,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		}
 	}
 
-	save(ncer_out, oam_data_mod);
+	save(ncer_out, oam_data, nbr_oams);
 	ncgr.save(ncgr_out, tile_data_mod);
 	ifs.close();
 }
@@ -295,9 +331,31 @@ void NCER::extract_cells(std::string& in_file, NCGR& ncgr, std::string& out_fold
 	ifs.close();
 }
 
-void NCER::save(string& ncer_out, vector<uint16_t>& oam_data_mod) {
+void NCER::save(string& ncer_out, vector<uint16_t>& oam_data_mod, vector<uint16_t>& nbr_oams) {
 	ifstream ifs(file_name);
 	ofstream ofs(ncer_out);
+
+	copy_until(ifs, ofs, 0x8);
+	write_little_endian_32(ofs, read_little_endian_32(ifs) + nbr_new_oams * 2 * 3);
+	copy_until(ifs, ofs, 0x14);
+	write_little_endian_32(ofs, read_little_endian_32(ifs) + nbr_new_oams * 2 * 3);
+	copy_until(ifs, ofs, 0x30);
+
+
+
+	int nbr_new_curr = 0;
+	for (unsigned i = 0; i != nbr_oams.size(); ++i) {
+		uint16_t nbr_oams_org = read_little_endian_16(ifs);
+		write_little_endian_16(ofs, nbr_oams[i]);
+		write_little_endian_16(ofs, read_little_endian_16(ifs));
+		write_little_endian_32(ofs, read_little_endian_32(ifs) + nbr_new_curr * 2 * 3);
+
+		if (nbr_oams[i] > nbr_oams_org) {
+			nbr_new_curr++;
+		}
+
+		copy_until(ifs, ofs, static_cast<int>(ifs.tellg()) + 0x8);
+	}
 
 	copy_until(ifs, ofs, oam_start_addr);
 
