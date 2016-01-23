@@ -63,7 +63,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		if (check.good()) {
 			exists = true;
 		}
-
+ 
 		check.close();
 
 		vector<unsigned char> image;
@@ -87,16 +87,16 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int custom_oam_tile;
 		int oam_x_shift;
 		int oam_y_shift;
-		int oam_to_replace;
 		int custom_nbr_new_oam = 0;
 		int custom_x = 0;
 		int custom_y = 0;
+		int nbr_oams_org = nbr_oams[i];
 
 		bool has_custom_oam = false;
-		bool custom_only_pos = false;
+		bool is_create_oam = false;
 		vector<int> oams_change;
 		
-		if (meta_exists) {
+		if (meta_exists ) {
 			string line;
 			getline(meta, line);
 			istringstream oam_info(line);
@@ -113,33 +113,35 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 
 			if (getline(meta, line)) {
 				istringstream extend_info(line);
+
 				has_custom_oam = true;
-				extend_info >> custom_only_pos;
-				extend_info >> custom_oam_tile;
+
 				extend_info >> oam_x_shift;
 				extend_info >> oam_y_shift;
-				extend_info >> oam_to_replace;
+			}
+
+			if (getline(meta, line)) {
+				istringstream extend_info(line);
+
+				extend_info >> custom_oam_tile;
 				extend_info >> custom_nbr_new_oam;
 				extend_info >> custom_x;
 				extend_info >> custom_y;
-				if (custom_nbr_new_oam) {
-					nbr_oams[i] += custom_nbr_new_oam;
-					nbr_new_oams += custom_nbr_new_oam;
+			
+				nbr_oams[i] += custom_nbr_new_oam;
+				nbr_new_oams += custom_nbr_new_oam;
 
-					uint16_t obj_atr_0 = oam_data[offs];
-					uint16_t obj_atr_1 = oam_data[offs + 1];
-					uint16_t obj_atr_2 = oam_data[offs + 2];
+				uint16_t obj_atr_0 = oam_data[offs];
+				uint16_t obj_atr_1 = oam_data[offs + 1];
+				uint16_t obj_atr_2 = oam_data[offs + 2];
 
-					oam_data.insert(oam_data.begin() + offs, 1, obj_atr_2);
-					oam_data.insert(oam_data.begin() + offs, 1, obj_atr_1);
-					oam_data.insert(oam_data.begin() + offs, 1, obj_atr_0);
-					
-				}
+				oam_data.insert(oam_data.begin() + offs, 1, obj_atr_2);
+				oam_data.insert(oam_data.begin() + offs, 1, obj_atr_1);
+				oam_data.insert(oam_data.begin() + offs, 1, obj_atr_0);
 			}
 		}
 
 		meta.close();
-
 
 		for (int j = nbr_oams[i] - 1; j != -1; --j) {
 			uint16_t obj_atr_0 = oam_data[offs + j * 3];
@@ -167,11 +169,14 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 				for (auto it = oams_change.begin(); it != oams_change.end(); ++it) {
 					if (*it == nbr_oams[i] - 1 - j) { // oams seem to be in reverse order compared to tinke?
 						modify_oam = true;
+						if (*it >= nbr_oams_org) {
+							is_create_oam = true;
+						}
 					}
 				}
 
 				if (has_custom_oam && modify_oam) {
-					if (!custom_only_pos && oam_to_replace == nbr_oams[i] - 1 - j) {
+					if (is_create_oam) {
 						// Creates a new OAM with size 16x16
 						width = 16;
 						height = 16;
@@ -340,8 +345,6 @@ void NCER::save(string& ncer_out, vector<uint16_t>& oam_data_mod, vector<uint16_
 	copy_until(ifs, ofs, 0x14);
 	write_little_endian_32(ofs, read_little_endian_32(ifs) + nbr_new_oams * 2 * 3);
 	copy_until(ifs, ofs, 0x30);
-
-
 
 	int nbr_new_curr = 0;
 	for (unsigned i = 0; i != nbr_oams.size(); ++i) {
