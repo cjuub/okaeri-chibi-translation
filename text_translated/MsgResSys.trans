@@ -685,8 +685,8 @@ Flush [<1a06ff000005>%d<1a06ff00000d>] Times<N>Full House [<1a06ff000005>%d<1a06
 [<1a06ff000005>8x<1a06ff00000d>] Daddy Ghost<N>[Probability] 1/8<N> <N>[<1a06ff000005>16x<1a06ff00000d>] Don Ghost<N>[Probability] 1/16
 [<1a06ff000005>?x<1a06ff00000d>] Busty Ghost<N>[Probability] 1/16<N><1a06ff000003>! Can be between 2-32x !
 
-<1a06ff000004>You got secret savings.
-<1a06ff000004>Empty.
+<1a06ff000004>You got some secret savings.
+<1a06ff000004>It's empty.
 
 That's a <1a06ff000009>Clownfish<1a06ff00000d>!
 If the Clownfish's<N>stomach gets full...
@@ -699,7 +699,7 @@ It looks like the<N>Clownfish's stomach is full.
 
 <1a0680010003>The <1a06ff000003>wallpaintings<1a06ff00000d> in the<N><1a06ff000009>Hallway<1a06ff00000d> have increased!!<1a0680010002>
 
-Chibi-Robo Ranking
+Chibi-Robo Rank
 Happy ＆ Rich Points
 Happy Points
 Current Moolah
@@ -707,7 +707,7 @@ Current Jewels
 Current Seals
 Current Greed (Casino)
 Plug Cord
-Dust Bag
+Dust Bags
 Chibi-Watts
 
 <1a068000000a>Chibi-Robo<1a0680000014>...
