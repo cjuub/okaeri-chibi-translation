@@ -1,3 +1,5 @@
-MainScIcon2
 MainScEyeIcon
 MainScHowMuch
+MainScIcon2
+MainScItem
+MainScTitle2
