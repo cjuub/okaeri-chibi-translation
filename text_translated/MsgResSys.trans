@@ -37,7 +37,7 @@ Slalom challange!
 With the Chibi-Bike you should<N>aim for %ds%02d!
 With the Honk Honk Patrol Car you<N>should aim for %ds%02d!
 Free kick record<1a06ff000003><N>%d<1a06ff00000d> Goal
-Fallen Washbowls Record<N><1a06ff000003>%d<1a06ff00000d> Washbowls
+Fallen Washbowls Record:<N><1a06ff000003>%d<1a06ff00000d> Washbowls
 <1a0680010003>GOAL!!!!!!<1a0680010002>
 Cooking Record<N><1a06ff000003>%d<1a06ff00000d> Points
 Butt hit!!<N><1a0680010001>Another <1a06ff000003>%d<1a06ff00000d> butts left.<1a0680010002>
@@ -379,7 +379,7 @@ In TV shopping<1a068000000a>...<1a0680000003>
 『<1a06ff000009>%s<1a06ff00000d>』 is<N>now in <1a06ff000003>stock<1a06ff00000d>!
 Something just got in<N><1a06ff000003>stock<1a06ff00000d>!
 <1a06ff000009>%s<1a06ff00000d> is<N>now in <1a06ff000003>stock<1a06ff00000d>!
-＜%s＞<N>Cleanliness right now: <1a06ff000003>%d<1a06ff00000d>％.<N>Best Cleanliness: %d％.
+＜%s＞<N>Cleanliness right now: <1a06ff000003>%d<1a06ff00000d>％<N>Best Cleanliness: %d％
 
 <1a06ff000003>%d<1a06ff00000d> Washbowls<N>＜Record: %d Washbowls＞
 Fallen Washbowls Record<N>%d Washbowls<N>▼<N><1a06ff000003>%d<1a06ff00000d> Washbowls
@@ -464,100 +464,100 @@ The Chibi-Pinwheels have<N>generated <1a06ff000005>%d<1a06ff00000d> Watts!
 Chibi-Watts
 House-Watts
 Plug
-Outlet
+Outlets
 Save
 Look around
 Chibi-Eyes
 Climb objects
 Climb cord
 Climb cloth
-Grab
+Grabbing
 Chibi-Vacuum
-Dust Bag
+Dust Bags
 Maintenance Machine
 How-Much Machine
 Cleanliness
 Chibi-Sieve
-Under the Floor
+Under Floor
 Post Pal
 Swinging Plug
 Chibi-Training
 Wonder Timer
-Happy Points Loan
+Happy Loan
 Chibi-Bike
 Dust
-Chibi-Watts is Chibi-Robo's<N>electrical power.
-If the Chibi-Watts reach <1a06ff000005>0<1a06ff00000d> then<N>Chibi-Robo will not be able to
-move, and will be taken back to his<N>house.
-Also, a few Happy Points<N>will be lost.
-So don't forget to recharge!
-House-Watts is the electrical power<N>used around the house.
-If the House-Watts reach <1a06ff000005>0<1a06ff00000d><N>then it will become
-impossible to recharge.
-Use the Trash Can to generate<N>more House-Watts!
+Chibi-Watts is the electrical power<N>that is powering Chibi-Robo.
+Chibi-Robo will not be able to move<N>if the Chibi-Watts become <1a06ff000005>0<1a06ff00000d>.
+If that happens, then Chibi-Robo<N>will be taken back to his house.
+A few Happy Points<N>will also be lost...
+So do not forget to recharge!
+House-Watts is the electrical<N>power used around the house.
+If the House-Watts become <1a06ff000005>0<1a06ff00000d>...
+Then it will not be possible<N>to recharge Chibi-Robo.
+Use the Trash Cans to generate<N>plenty of House-Watts!
 Touch the Plug on the ground<N>in order to pick it up!
-Touch the plug when carrying it<N>to drop it!
-If you touch an Outlet while<N>holding the Plug, then it will
-be inserted into the Outlet and the <N>Chibi-Watts will be recharged.
-When you insert the Plug into the<N>Outlet in the Chibi-House
-or at the end of a cycle when you<N>return to the Chibi-House
-then you will be able to Save!
+Touch the plug while carrying<N>it in order to drop it!
+If you touch an Outlet while<N>holding the Plug...
+Then it will be inserted and the<N>Chibi-Watts will be recharged.
+When you insert the Plug into the<N>Outlet in the Chibi-House...
+Or at the end of a cycle when you<N>return to the Chibi-House...
+Then you will be asked if you<N>want to save the game!
 Use the D-pad or the ABXY buttons<N>to look around the area!
-Using the Chibi-Eyes found in the<N>Chibi-Menu you will be able to
-search for trash, dust, outlets,<N>and so on!
-If you move Chibi-Robo<N>close to obstacles with...
-Similar height as Chibi-Robo,<N>then Chibi-Robo can...
-Perform a short jump in<N>order to climb the obstacle!
-You can climb things like cords<N>and strings!
-You can climb things like sofas<N>and curtains!
-If you touch things like drawers and<N>small cans you will grab on
-to them and will then be able to pull<N>them in different directions!
-You will only be able to use the<N>Chibi-Vacuum when you're
-plugged into an Outlet!
-Dust Bag is a bag containing<N>dust and other things that
-have been sucked up by the<N>Chibi-Vacuum.
-In the beginning you will only be able<N>to use <1a06ff000005>1<1a06ff00000d> bag at the time.
+Using the Chibi-Eyes found<N>in the Chibi-Menu...
+You'll be able to search for Trash,<N>Dust, Outlets, and more!
+When facing obstacles with<N>similar height as Chibi-Robo...
+Make Chibi-Robo walk into<N>it for a little while...
+He will then perform a short jump<N>in order to climb the obstacle!
+Chibi-Robo can climb things<N>like cords and strings!
+Chibi-Robo can climb things<N>like sofas and curtains!
+Touch things like drawers and small<N>cans to make Chibi-Robo grab them.
+He will then be able to move<N>them in different directions!
+If Chibi-Robo is plugged<N>into an Outlet...
+Then he will be able to<N>use the Chibi-Vacuum!
+When the Chibi-Vacuum has been<N>used to suck things up...
+Those things will be stored<N>as dust inside a Dust Bag.
+In the beginning Chibi-Robo will only<N>be able to use <1a06ff000005>1<1a06ff00000d> bag at a time.
 If you find a dropped Dust Bag then<N>the max limit will increase!
-You can spend Moolah in order<N>to make the Plug Cord 
-become longer!
-You can convert objects you<N>find by using the Chibi-Sieve
-into Moolah!
-Cleanliness represents a room's<N>overall cleanliness.
+With the Maintenance Machine...
+You can spend Moolah in order<N>to make the Plug's cord longer!
+With the How-Much Machine...
+Items found with the Chibi-Sieve<N>can be converted to Moolah!
+The Cleanliness represents a<N>room's overall cleanliness.
 It will increase as a room<N>becomes more clean.
-If the Cleanliness reaches <1a06ff000005>70<1a06ff00000d>％<N>then something good might<N>happen...
-The trick for using the Sieve is
-to shake with large moves until<N>jewels start to appear.
-If the jewel is covered in soil<N>then try to 
-gently shake the Sieve!
-If you're in trouble running out<N>of Watts or Moolah
-then try using the Chibi-Vacuum on<N>soil found <1a06ff000009>under the floor<1a06ff00000d>,
-or use the Spoon to dig in spots<N>with different color.
-Try searching for trash!
-If you paste Seals...
+If the Cleanliness reaches <1a06ff000005>70<1a06ff00000d>％,<N>something good might happen...
+The trick to successfully<N>using the Sieve...
+Is to shake it with large<N>moves until a jewel appear.
+If the jewel is covered in<N>dust when it appears...
+Then gently shake the Sieve<N>until you can see it clearly!
+If you're running out<N>of Watts or Moolah...
+Then try using the Chibi-Vacuum on<N>soil found in <1a06ff000009>Under Floor<1a06ff00000d>...
+Or use the Spoon to dig in spots<N>with color that stands out...
+You'll often find Trash<N>in those places!
+If you gather Seals and send<N>them away using Post Pal...
 Then you can win<N>things for free!
-The 「Become a celebrity!」<N>campaign is currently active.
-<1a06ff000003>Post Pal<1a06ff00000d> is now available<N>for purchase in TV shopping!
-If the Plug cord is long<N>enough to reach...
+When the 「Become a celebrity!」<N>campaign becomes active...
+Then <1a06ff000003>Post Pal<1a06ff00000d> can be bought<N>from the TV shopping!
+If the Plug's cord<N>is long enough...
 Then you can insert it into an<N>Outlet far away by throwing it.
-Furthermore.
+Furthermore...
 Things that look like switches...<N>Spots likely to break...
-Try to throw the Plug and<N>hit things like that!
-Chibi-Training is training for<N>Chibi-Robo.
-Perform different actions as<N>many times as you like...
-Use it to train your skill!
+Try throwing the Plug<N>at things like that!
+Chibi-Training is training<N>on how to use Chibi-Robo.
+You can perform different actions<N>as many times as you like...
+Be sure to do some training!
 With the Wonder Timer...
 You can set the length of the<N>daytime- and nighttime cycles.
 In the beginning you can<N>only select 5 minutes.
-But as your Chibi-Robo<N>Rank increases...
+But as the Chibi-Robo<N>Rank increases...
 The selectable cycle times<N>will also increase!
 With the Happy Loan you<N>can borrow Moolah.
 However...
 When it's time to<N>repay the loan...
-And you're Moolah becomes <1a06ff00000b>0<1a06ff00000d>...
+And you're Moolah is <1a06ff00000b>0<1a06ff00000d>...
 Then you won't be able to buy<N>anything from the TV Shopping.
-When the Watt consumption<N>is rather small...
-It will be extremely convenient<N>to visit places further away!
-The Dust found in<N>higher up places...
+While the Watt consumption when<N>using the Bike is higher...
+It's still extremely convenient when<N>visiting places further away!
+The Dust found in<N>places higher up...
 Maybe it has a lot more<N>Jewels hidden inside of it!?
 
 ???
@@ -706,7 +706,7 @@ Current Moolah
 Current Jewels
 Current Seals
 Current Greed (Casino)
-Plug Cord
+Plug's Cord
 Dust Bags
 Chibi-Watts
 
