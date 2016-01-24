@@ -177,7 +177,7 @@ It's an economic<N>low energy vehicle.
 A vehicle with outstanding<N>speed.
 A vehicle used to fly<N>freely in the air.
 Can clean without the need<N>for an outlet.
-It increases probability of<N>discovering jewels.
+It increases probability of<N>discovering Gems.
 With this you can<N>become a policeman.
 With this you can<N>become an army soldier.
 With this you can<N>swim underwater.
@@ -251,7 +251,7 @@ Keychain
 Messy Portrait
 Locket Without Photo
 Chibi-Robo?
-Formless Jewel
+Formless Treasure
 
 Color TV
 Kitchen Stove
@@ -526,8 +526,8 @@ The Cleanliness represents a<N>room's overall cleanliness.
 It will increase as a room<N>becomes more clean.
 If the Cleanliness reaches <1a06ff000005>70<1a06ff00000d>％,<N>something good might happen...
 The trick to successfully<N>using the Sieve...
-Is to shake it with large<N>moves until a jewel appear.
-If the jewel is covered in<N>dust when it appears...
+Is to shake it with large<N>moves until a Gem appear.
+If the Gem is covered in<N>dust when it appears...
 Then gently shake the Sieve<N>until you can see it clearly!
 If you're running out<N>of Watts or Moolah...
 Then try using the Chibi-Vacuum on<N>soil found in <1a06ff000009>Under Floor<1a06ff00000d>...
@@ -558,7 +558,7 @@ Then you won't be able to buy<N>anything from the TV Shopping.
 While the Watt consumption when<N>using the Bike is higher...
 It's still extremely convenient when<N>visiting places further away!
 The Dust found in<N>places higher up...
-Maybe it has a lot more<N>Jewels hidden inside of it!?
+Maybe it has a lot more<N>Gems hidden inside of it!?
 
 ???
 ◆5 Minutes
@@ -703,7 +703,7 @@ Chibi-Robo Rank
 Happy ＆ Rich Points
 Happy Points
 Current Moolah
-Current Jewels
+Current Gems
 Current Seals
 Current Greed (Casino)
 Plug's Cord
@@ -713,7 +713,7 @@ Chibi-Watts
 <1a068000000a>Chibi-Robo<1a0680000014>...
 <1a068000000a>You passed out from running<N>out of Watts <1a06ff000003>%d<1a06ff00000d> times.
 <1a068000000a>You gathered<N><1a06ff000005>%d<1a06ff00000d> Happy Points<N> <N>You gathered<N><1a06ff000005>%d<1a06ff00000d> Rich Points
-<1a068000000a>You found<N><1a06ff000003>%d<1a06ff00000d> Jewels<N> <N>You dropped<N><1a06ff000003>%d<1a06ff00000d> Jewels
+<1a068000000a>You found<N><1a06ff000003>%d<1a06ff00000d> Gems<N> <N>You dropped<N><1a06ff000003>%d<1a06ff00000d> Gems
 <1a068000000a>You earned <1a06ff000003>%d<1a06ff00000d><N>Greed from the Casino...
 <1a068000000a>By moving around here for<N><1a06ff000003>%d<1a06ff00000d> hours and <1a06ff000003>%d<1a06ff00000d> minutes<1a0680000014>...<1a0680000003>
 <1a068000000a>In total you consumed<N><1a06ff000003>%d<1a06ff00000d> Watts.
