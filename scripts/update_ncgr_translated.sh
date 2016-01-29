@@ -12,9 +12,10 @@ for i in ./ncer_image_translated/* ; do
     name=$(basename "$i");
     eval "mkdir -p " "./tmp/"$name
     eval "cp ./ncer_image_translated/"$name"/*.meta" "./tmp/"$name" 2> /dev/null";
+    eval "cp ./ncer_image_translated/"$name"/*_*.png" "./tmp/"$name" 2> /dev/null";
 
     for j in $i/* ; do
-        if [ "${j: -5}" == ".meta" ]; then
+        if [ "${j: -5}" == ".meta" ] || [ "${j: -6:1}" == "_" ]; then
           continue;
         fi
 

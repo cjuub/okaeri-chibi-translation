@@ -24,9 +24,11 @@ GraphicMeta::GraphicMeta(const string& path) {
 		oam_info >> x_max;
 		oam_info >> y_max;
 
+		int img_nbr = 0;
 		int oam;
 		while (oam_info >> oam) {
 			oams_change.push_back(oam);
+			oam_image_map.emplace(oam, img_nbr);
 		}
 
 		if (getline(meta, line)) {
@@ -34,8 +36,13 @@ GraphicMeta::GraphicMeta(const string& path) {
 
 			is_custom_oam = true;
 
-			extend_info >> oam_x_shift;
+			int x_shift;
+			extend_info >> x_shift;
 			extend_info >> oam_y_shift;
+
+			for (auto it = oams_change.begin(); it != oams_change.end(); ++it) {
+				oam_x_shift[*it] = x_shift;
+			}
 		}
 
 		if (getline(meta, line)) {
@@ -45,6 +52,29 @@ GraphicMeta::GraphicMeta(const string& path) {
 			extend_info >> nbr_new_oam;
 			extend_info >> custom_x;
 			extend_info >> custom_y;
+		}
+
+		while (getline(meta, line)) {
+			istringstream extend_info(line);
+
+			++img_nbr;
+
+			while (extend_info >> oam) {
+				oams_change.push_back(oam);
+				oams_shift_only.push_back(oam);
+				oam_image_map.emplace(oam, img_nbr);
+			}
+
+			getline(meta, line);
+			istringstream extend_info2(line);
+
+			int x_shift;
+			extend_info2 >> x_shift;
+			extend_info2 >> oam_y_shift;
+
+			for (unsigned i = 0; i != oams_shift_only.size(); ++i) {
+				oam_x_shift[oams_shift_only[i]] = x_shift;
+			}
 		}
 	}
 
@@ -95,8 +125,8 @@ int GraphicMeta::get_new_oam_y() {
 	return custom_y;
 }
 
-int GraphicMeta::get_oam_x_shift() {
-	return oam_x_shift;
+int GraphicMeta::get_oam_x_shift(int oam) {
+	return oam_x_shift[oam];
 }
 
 int GraphicMeta::get_new_tile() {
@@ -117,4 +147,18 @@ int GraphicMeta::get_x_max() {
 
 int GraphicMeta::get_y_max() {
 	return y_max;
+}
+
+bool GraphicMeta::is_shift_only(int oam) {
+	for (auto it = oams_shift_only.begin(); it != oams_shift_only.end(); ++it) {
+		if (*it == oam) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+int GraphicMeta::get_image(int oam) {
+	return oam_image_map[oam];
 }

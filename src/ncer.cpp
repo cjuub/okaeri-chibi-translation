@@ -52,24 +52,39 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int img_offs_y = img_h / 2;
 
 
+		bool img_exists[OAM_LIMIT] = {false};
+
+		vector<vector<unsigned char>> images;
+		bool is_good;
+		int img_nbr = 0;
+
 		ifstream check(bmp_folder + "/" + SSTR(i) + ".png");
-		bool exists = false;
-		if (check.good()) {
-			exists = true;
+		if ((is_good = check.good())) {
+			img_exists[img_nbr++] = true;
+			vector<unsigned char> image;
+			lodepng::decode(image, img_w, img_h, bmp_folder + "/" + SSTR(i) + ".png");
+			images.push_back(image);
 		}
- 
+
 		check.close();
 
-		vector<unsigned char> image;
-		if (exists) {
-			lodepng::decode(image, img_w, img_h, bmp_folder + "/" + SSTR(i) + ".png");
-		}
+		do {
+			string str = bmp_folder + "/" + SSTR(i) + "_" + SSTR(img_nbr) + ".png";
+			ifstream check(str);
+			if ((is_good = check.good())) {
+				img_exists[img_nbr++] = true;
+				vector<unsigned char> image;
+				lodepng::decode(image, img_w, img_h, str);
+				images.push_back(image);
+			}
+
+			check.close();
+		} while (is_good);
 
 		int x_min = 0;
 		int y_min = 0;
 		int x_max = 511;
 		int y_max = 255;
-
 
 		GraphicMeta meta(bmp_folder + "/" + SSTR(i) + ".meta");
 
@@ -159,12 +174,13 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 					// OAM Y HERE
 
 					obj_atr_1 &= 0xFE00;
-					obj_atr_1 += static_cast<uint16_t>((oam_x + meta.get_oam_x_shift()) & 0x01FF);
+					obj_atr_1 += static_cast<uint16_t>((oam_x + meta.get_oam_x_shift(curr_oam)) & 0x01FF);
 
 
 					oam_data[offs + j * 3] = obj_atr_0;
 					oam_data[offs + j * 3 + 1] = obj_atr_1;
 					oam_data[offs + j * 3 + 2] = obj_atr_2;
+
 				}
 			} else {
 				modify_oam = true;
@@ -179,8 +195,8 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 							int img_y = img_offs_y + oam_y + tileY + y;
 							int pos = img_x * 4 + img_y * img_w * 4;
 
-							if (exists && modify_oam && img_x >= x_min && img_x <= x_max && img_y >= y_min && img_y <= y_max) {
-								tile_data_mod[tile_data_index] = image[pos];
+							if (img_exists[meta.get_image(curr_oam)] && modify_oam && img_x >= x_min && img_x <= x_max && img_y >= y_min && img_y <= y_max) {
+								tile_data_mod[tile_data_index] = images[meta.get_image(curr_oam)][pos];
 							} else {
 								tile_data_mod[tile_data_index] = ncgr.get_tile_data()[tile_data_index];
 							}

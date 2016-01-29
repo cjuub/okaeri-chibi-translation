@@ -3,6 +3,9 @@
 
 #include <string>
 #include <vector>
+#include <unordered_map>
+
+#define OAM_LIMIT 15
 
 class GraphicMeta {
 public:
@@ -15,13 +18,16 @@ public:
 	bool is_new_oam(int oam, int nbr_oams_org);
 	int get_new_oam_x();
 	int get_new_oam_y();
-	int get_oam_x_shift();
+	int get_oam_x_shift(int oam);
 	int get_new_tile();
 
 	int get_x_min();
 	int get_y_min();
 	int get_x_max();
 	int get_y_max();
+
+	bool is_shift_only(int oam);
+	int get_image(int oam);
 private:
 	bool meta_exists = false;
 
@@ -31,7 +37,7 @@ private:
 	int y_max = 0;
 
 	int custom_oam_tile = 0;
-	int oam_x_shift = 0;
+	int oam_x_shift[OAM_LIMIT] = {0};
 	int oam_y_shift = 0;
 	int nbr_new_oam = 0;
 	int custom_x = 0;
@@ -40,6 +46,9 @@ private:
 	bool is_custom_oam = false;
 	
 	std::vector<int> oams_change;
+	std::vector<int> oams_shift_only;
+
+	std::unordered_map<int, int> oam_image_map;
 };
 
 #endif
