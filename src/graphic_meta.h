@@ -9,17 +9,17 @@
 
 class GraphicMeta {
 public:
-	GraphicMeta(const std::string& path);
+	GraphicMeta(const std::string& path, int nbr_oams_org_in);
 	bool has_custom_oam();
 	bool has_new_oam();
 	uint16_t get_nbr_new_oam();
 	bool exists();
 	bool has_oam(int oam);
-	bool is_new_oam(int oam, int nbr_oams_org);
-	int get_new_oam_x();
-	int get_new_oam_y();
+	bool is_new_oam(int oam);
+	int get_new_oam_x(int oam);
+	int get_new_oam_y(int oam);
 	int get_oam_x_shift(int oam);
-	int get_new_tile();
+	int get_new_tile(int oam);
 
 	int get_x_min();
 	int get_y_min();
@@ -31,17 +31,19 @@ public:
 private:
 	bool meta_exists = false;
 
+	int nbr_oams_org;
+
 	int x_min = 0;
 	int y_min = 0;
 	int x_max = 0;
 	int y_max = 0;
 
-	int custom_oam_tile = 0;
+	std::unordered_map<int, int> custom_oam_tile_map;
 	int oam_x_shift[OAM_LIMIT] = {0};
 	int oam_y_shift = 0;
 	int nbr_new_oam = 0;
-	int custom_x = 0;
-	int custom_y = 0;
+	std::unordered_map<int, int> custom_x_map;
+	std::unordered_map<int, int> custom_y_map;
 
 	bool is_custom_oam = false;
 	

@@ -86,20 +86,22 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int x_max = 511;
 		int y_max = 255;
 
-		GraphicMeta meta(bmp_folder + "/" + SSTR(i) + ".meta");
-
 		int nbr_oams_org = nbr_oams[i];
+		GraphicMeta meta(bmp_folder + "/" + SSTR(i) + ".meta", nbr_oams_org);
+
 		if (meta.has_custom_oam() && meta.has_new_oam()) {
 			nbr_oams[i] += meta.get_nbr_new_oam();
 			nbr_new_oams += meta.get_nbr_new_oam();
 
-			uint16_t obj_atr_0 = oam_data[offs];
-			uint16_t obj_atr_1 = oam_data[offs + 1];
-			uint16_t obj_atr_2 = oam_data[offs + 2];
+			for (int j = 0; j != meta.get_nbr_new_oam(); ++j) {
+				uint16_t obj_atr_0 = oam_data[offs];
+				uint16_t obj_atr_1 = oam_data[offs + 1];
+				uint16_t obj_atr_2 = oam_data[offs + 2];
 
-			oam_data.insert(oam_data.begin() + offs, 1, obj_atr_2);
-			oam_data.insert(oam_data.begin() + offs, 1, obj_atr_1);
-			oam_data.insert(oam_data.begin() + offs, 1, obj_atr_0);
+				oam_data.insert(oam_data.begin() + offs, 1, obj_atr_2);
+				oam_data.insert(oam_data.begin() + offs, 1, obj_atr_1);
+				oam_data.insert(oam_data.begin() + offs, 1, obj_atr_0);
+			}
 		}
 
 		for (int j = nbr_oams[i] - 1; j != -1; --j) {
@@ -136,7 +138,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 				y_max = meta.get_y_max();
 
 				if (meta.has_custom_oam() && modify_oam) {
-					if (meta.is_new_oam(curr_oam, nbr_oams_org)) {
+					if (meta.is_new_oam(curr_oam)) {
 						// Creates a new OAM with size 16x16
 						width = 16;
 						height = 16;
@@ -154,7 +156,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 						obj_atr_1 &= ~(1 << 15);
 
 						int CUSTOM_SIZE = 4; // 16x16 = 4 tiles
-						tile_index = (ncgr.get_tile_data().size() / (8 * 8)) + meta.get_new_tile() * CUSTOM_SIZE;
+						tile_index = (ncgr.get_tile_data().size() / (8 * 8)) + meta.get_new_tile(curr_oam) * CUSTOM_SIZE;
 						obj_atr_2 &= 0xFC00;
 						obj_atr_2 += tile_index / TILE_INDEX_MULTIPLIER;
 
@@ -162,8 +164,8 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 							tile_data_mod.resize(tile_data_mod.size() + 8 * 8 * CUSTOM_SIZE);
 						}
 
-						oam_x = meta.get_new_oam_x();
-						oam_y = meta.get_new_oam_y();
+						oam_x = meta.get_new_oam_x(curr_oam);
+						oam_y = meta.get_new_oam_y(curr_oam);
 
 						obj_atr_0 &= 0xFF00;
 						obj_atr_0 += static_cast<uint16_t>(oam_y & 0x00FF);
@@ -315,7 +317,7 @@ void NCER::save(string& ncer_out, vector<uint16_t>& oam_data_mod, vector<uint16_
 		write_little_endian_32(ofs, read_little_endian_32(ifs) + nbr_new_curr * 2 * 3);
 
 		if (nbr_oams[i] > nbr_oams_org) {
-			nbr_new_curr++;
+			nbr_new_curr += nbr_oams[i] - nbr_oams_org;
 		}
 
 		copy_until(ifs, ofs, static_cast<int>(ifs.tellg()) + 0x8);

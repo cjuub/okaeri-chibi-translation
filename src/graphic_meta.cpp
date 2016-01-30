@@ -5,8 +5,10 @@
 
 using namespace std;
 
-GraphicMeta::GraphicMeta(const string& path) {
+GraphicMeta::GraphicMeta(const string& path, int nbr_oams_org_in) {
 	ifstream meta(path);
+
+	nbr_oams_org = nbr_oams_org_in;
 
 	if (meta.good()) {
 		meta_exists = true;
@@ -26,9 +28,14 @@ GraphicMeta::GraphicMeta(const string& path) {
 
 		int img_nbr = 0;
 		int oam;
+		int new_oam = -1;
 		while (oam_info >> oam) {
 			oams_change.push_back(oam);
 			oam_image_map.emplace(oam, img_nbr);
+
+			if (is_new_oam(oam)) {
+				new_oam = oam;
+			}
 		}
 
 		if (getline(meta, line)) {
@@ -48,10 +55,17 @@ GraphicMeta::GraphicMeta(const string& path) {
 		if (getline(meta, line)) {
 			istringstream extend_info(line);
 
-			extend_info >> custom_oam_tile;
+			int tile;
+			int custom_x;
+			int custom_y;
+			extend_info >> tile;
+
+			custom_oam_tile_map.emplace(new_oam, tile);
 			extend_info >> nbr_new_oam;
 			extend_info >> custom_x;
+			custom_x_map.emplace(new_oam, custom_x);
 			extend_info >> custom_y;
+			custom_y_map.emplace(new_oam, custom_y);
 		}
 
 		while (getline(meta, line)) {
@@ -63,6 +77,10 @@ GraphicMeta::GraphicMeta(const string& path) {
 				oams_change.push_back(oam);
 				oams_shift_only.push_back(oam);
 				oam_image_map.emplace(oam, img_nbr);
+
+				if (is_new_oam(oam)) {
+					new_oam = oam;
+				}
 			}
 
 			getline(meta, line);
@@ -74,6 +92,25 @@ GraphicMeta::GraphicMeta(const string& path) {
 
 			for (unsigned i = 0; i != oams_shift_only.size(); ++i) {
 				oam_x_shift[oams_shift_only[i]] = x_shift;
+			}
+
+			if (getline(meta, line)) {
+				istringstream extend_info2(line);
+
+				int tile;
+				int nbr_new;
+				int custom_x;
+				int custom_y;
+
+				extend_info2 >> tile;
+				extend_info2 >> nbr_new;
+
+				custom_oam_tile_map.emplace(new_oam, tile);
+				nbr_new_oam += nbr_new;
+				extend_info2 >> custom_x;
+				custom_x_map.emplace(new_oam, custom_x);
+				extend_info2 >> custom_y;
+				custom_y_map.emplace(new_oam, custom_y);
 			}
 		}
 	}
@@ -107,7 +144,7 @@ bool GraphicMeta::has_oam(int oam) {
 	return false;
 }
 
-bool GraphicMeta::is_new_oam(int oam, int nbr_oams_org) {
+bool GraphicMeta::is_new_oam(int oam) {
 	for (auto it = oams_change.begin(); it != oams_change.end(); ++it) {
 		if (*it == oam && *it >= nbr_oams_org) {
 			return true;
@@ -117,20 +154,20 @@ bool GraphicMeta::is_new_oam(int oam, int nbr_oams_org) {
 	return false;
 }
 
-int GraphicMeta::get_new_oam_x() {
-	return custom_x;
+int GraphicMeta::get_new_oam_x(int oam) {
+	return custom_x_map[oam];
 }
 
-int GraphicMeta::get_new_oam_y() {
-	return custom_y;
+int GraphicMeta::get_new_oam_y(int oam) {
+	return custom_y_map[oam];
 }
 
 int GraphicMeta::get_oam_x_shift(int oam) {
 	return oam_x_shift[oam];
 }
 
-int GraphicMeta::get_new_tile() {
-	return custom_oam_tile;
+int GraphicMeta::get_new_tile(int oam) {
+	return custom_oam_tile_map[oam];
 }
 
 int GraphicMeta::get_x_min() {
