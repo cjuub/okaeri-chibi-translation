@@ -26,7 +26,6 @@ public:
 	int get_x_max();
 	int get_y_max();
 
-	// bool is_shift_only(int oam);
 	int get_image(int oam);
 private:
 	bool meta_exists = false;

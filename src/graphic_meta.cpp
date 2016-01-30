@@ -188,16 +188,6 @@ int GraphicMeta::get_y_max() {
 	return y_max;
 }
 
-// bool GraphicMeta::is_shift_only(int oam) {
-// 	for (auto it = oams_shift_only.begin(); it != oams_shift_only.end(); ++it) {
-// 		if (*it == oam) {
-// 			return true;
-// 		}
-// 	}
-
-// 	return false;
-// }
-
 int GraphicMeta::get_image(int oam) {
 	return oam_image_map[oam];
 }
