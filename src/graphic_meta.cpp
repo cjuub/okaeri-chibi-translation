@@ -73,9 +73,11 @@ GraphicMeta::GraphicMeta(const string& path, int nbr_oams_org_in) {
 
 			++img_nbr;
 
+			vector<int> oams_to_shift;
+
 			while (extend_info >> oam) {
 				oams_change.push_back(oam);
-				oams_shift_only.push_back(oam);
+				oams_to_shift.push_back(oam);
 				oam_image_map.emplace(oam, img_nbr);
 
 				if (is_new_oam(oam)) {
@@ -90,8 +92,8 @@ GraphicMeta::GraphicMeta(const string& path, int nbr_oams_org_in) {
 			extend_info2 >> x_shift;
 			extend_info2 >> oam_y_shift;
 
-			for (unsigned i = 0; i != oams_shift_only.size(); ++i) {
-				oam_x_shift[oams_shift_only[i]] = x_shift;
+			for (unsigned i = 0; i != oams_to_shift.size(); ++i) {
+				oam_x_shift[oams_to_shift[i]] = x_shift;
 			}
 
 			if (getline(meta, line)) {
@@ -186,15 +188,15 @@ int GraphicMeta::get_y_max() {
 	return y_max;
 }
 
-bool GraphicMeta::is_shift_only(int oam) {
-	for (auto it = oams_shift_only.begin(); it != oams_shift_only.end(); ++it) {
-		if (*it == oam) {
-			return true;
-		}
-	}
+// bool GraphicMeta::is_shift_only(int oam) {
+// 	for (auto it = oams_shift_only.begin(); it != oams_shift_only.end(); ++it) {
+// 		if (*it == oam) {
+// 			return true;
+// 		}
+// 	}
 
-	return false;
-}
+// 	return false;
+// }
 
 int GraphicMeta::get_image(int oam) {
 	return oam_image_map[oam];
