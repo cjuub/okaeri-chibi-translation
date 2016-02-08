@@ -26,12 +26,17 @@ for i in ./ncer_image_translated/* ; do
     eval "./image_tool -i ./tmp/nxxx_original/"$(basename "$name")".NCGR" "./tmp/nxxx_original/"$(basename "$name")".NCER" "./tmp/"$(basename "$name") "./tmp/ncgr_translated/"$(basename "$name")".NCGR" "./tmp/ncer_translated/"$(basename "$name")".NCER";
 done
 
+
+
+mkdir -p ./tmp/nscr_translated
+
 for i in ./nscr_image_translated/* ; do
-    if [ $(basename "$i") == "LICENSE" ]; then
+    if [ $(basename "$i") == "LICENSE" ] || [ "${i: -5}" == ".meta" ]; then
         continue;
     fi
 
     name=$(basename "$i");
+    eval "cp ./nscr_image_translated/*.meta ./tmp/ 2> /dev/null";
     eval "./png_merge ./nscr_image_original/"$name "./nscr_image_translated/"$name "./tmp/"$name;
-    eval "./image_tool -i2 ./tmp/nxxx_original/"${name:0:-4}".NCGR" "./tmp/nxxx_original/"${name:0:-4}".NSCR" "./tmp/"$(basename "$name") "./tmp/ncgr_translated/"${name:0:-4}".NCGR";
+    eval "./image_tool -i2 ./tmp/nxxx_original/"${name:0:-4}".NCGR" "./tmp/nxxx_original/"${name:0:-4}".NSCR" "./tmp/"$(basename "$name") "./tmp/ncgr_translated/"${name:0:-4}".NCGR" "./tmp/nscr_translated/"${name:0:-4}".NSCR";
 done

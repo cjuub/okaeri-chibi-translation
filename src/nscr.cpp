@@ -3,12 +3,19 @@
 #include "little_endian.h"
 
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
+
+struct meta_data {
+	int x;
+	int y;
+};
+
 NSCR::NSCR() {}
 
-void NSCR::insert_image(std::string& nscr_file, NCGR& ncgr, std::string& in_file, std::string& ncgr_out) {
+void NSCR::insert_image(string& nscr_file, NCGR& ncgr, string& in_file, string& ncgr_out, string& nscr_out) {
 	ifstream ifs(nscr_file);
 
 	ifs.seekg(0x14);
@@ -33,13 +40,62 @@ void NSCR::insert_image(std::string& nscr_file, NCGR& ncgr, std::string& in_file
 		return;
 	}
 
+	vector<meta_data> new_tiles;
+
+	string meta_filename = in_file.substr(0, in_file.size() - 3) + "meta";
+	ifstream meta(meta_filename);
+	bool meta_exist = false;
+	if (meta.good()) {
+		meta_exist = true;
+
+		string line;
+		while (getline(meta, line)) {
+			istringstream line_data(line);
+
+			meta_data data;
+			line_data >> data.x;
+			line_data >> data.y;
+
+			new_tiles.push_back(data);
+		}
+	}
+
+	meta.close();
+
+	vector<uint16_t> data_mod;
+	vector<uint16_t> new_data;
+
+	int max_tile = -1;
+
 	for (uint32_t i = 0; i != data_size / 2; ++i) {
 		uint16_t data = read_little_endian_16(ifs);
+		int tile_index = data & 0x3FF;
+		if (tile_index > max_tile) {
+			max_tile = tile_index;
+		}
+	}
+
+	ifs.seekg(0x24);
+
+	for (uint32_t i = 0; i != data_size / 2; ++i) {
+		uint16_t data = read_little_endian_16(ifs);
+		data_mod.push_back(data);
 
 		int tile_index = data & 0x3FF;
 		bool h_flip = data & 0x400;
 		bool v_flip = data & 0x800;
-		// int palette_index = data & 0xF000;
+
+		if (meta_exist) {
+			for (auto it = new_tiles.begin(); it != new_tiles.end(); ++it) {
+				if (img_x == it->x && img_y == it->y) {
+					tile_index = max_tile + 1;
+					max_tile++;
+
+					data_mod[i] &= 0xFC00;
+					data_mod[i] += tile_index;
+				}
+			}
+		}
 
 		if (h_flip && v_flip) {
 			for (int tileY = 7; tileY != -1; --tileY) {
@@ -78,7 +134,7 @@ void NSCR::insert_image(std::string& nscr_file, NCGR& ncgr, std::string& in_file
 	}
 
 	ncgr.save(ncgr_out, tile_data_mod);
-	
+	save(nscr_file, nscr_out, data_mod);
 	ifs.close();
 }
 
@@ -163,4 +219,20 @@ void NSCR::extract_image(std::string& in_file, NCGR& ncgr, std::string& out_file
 	}
 
 	lodepng::encode(out_file, image, width, height);
+}
+
+void NSCR::save(const string& nscr_in, const string& nscr_out, vector<uint16_t>& data_mod) {
+	ifstream ifs(nscr_in);
+	ofstream ofs(nscr_out);
+
+	copy_until(ifs, ofs, 0x24);
+
+	for (unsigned i = 0; i < data_mod.size(); ++i) {
+		write_little_endian_16(ofs, data_mod[i]);
+	}
+
+	copy_until(ifs, ofs, EOF);
+
+	ofs.close();
+	ifs.close();
 }

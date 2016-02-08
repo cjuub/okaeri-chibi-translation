@@ -24,6 +24,7 @@ echo -n "Generating NCGR/NCER from translated images..."
 ./scripts/update_ncgr_translated.sh
 cp ./tmp/ncgr_translated/* ./tmp/out/data/2d/
 cp ./tmp/ncer_translated/* ./tmp/out/data/2d/
+cp ./tmp/nscr_translated/* ./tmp/out/data/2d/
 echo " Done!";
 
 echo -n "Repacking files into ROM..."
