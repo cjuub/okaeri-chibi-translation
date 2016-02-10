@@ -52,7 +52,7 @@ GraphicMeta::GraphicMeta(const string& path, int nbr_oams_org_in) {
 			}
 		}
 
-		if (getline(meta, line)) {
+		if (getline(meta, line) && line != "") {
 			istringstream extend_info(line);
 
 			int tile;
@@ -62,6 +62,13 @@ GraphicMeta::GraphicMeta(const string& path, int nbr_oams_org_in) {
 
 			custom_oam_tile_map.emplace(new_oam, tile);
 			extend_info >> nbr_new_oam;
+
+			// ugly hack to specify existing tile instead of new
+			if (nbr_new_oam == 0) {
+				is_existing_tile = true;
+				nbr_new_oam++;
+			}
+
 			extend_info >> custom_x;
 			custom_x_map.emplace(new_oam, custom_x);
 			extend_info >> custom_y;
@@ -190,4 +197,8 @@ int GraphicMeta::get_y_max() {
 
 int GraphicMeta::get_image(int oam) {
 	return oam_image_map[oam];
+}
+
+bool GraphicMeta::has_existing_tile() {
+	return is_existing_tile;
 }

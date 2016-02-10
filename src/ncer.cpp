@@ -89,7 +89,7 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 		int nbr_oams_org = nbr_oams[i];
 		GraphicMeta meta(bmp_folder + "/" + SSTR(i) + ".meta", nbr_oams_org);
 
-		if (meta.has_custom_oam() && meta.has_new_oam()) {
+		if (meta.has_custom_oam() && (meta.has_new_oam() || meta.has_existing_tile())) {
 			nbr_oams[i] += meta.get_nbr_new_oam();
 			nbr_new_oams += meta.get_nbr_new_oam();
 
@@ -156,7 +156,12 @@ void NCER::insert_cells(std::string& ncer_file, NCGR& ncgr, std::string& bmp_fol
 						obj_atr_1 &= ~(1 << 15);
 
 						int CUSTOM_SIZE = 4; // 16x16 = 4 tiles
-						tile_index = (ncgr.get_tile_data().size() / (8 * 8)) + meta.get_new_tile(curr_oam) * CUSTOM_SIZE;
+						if (meta.has_existing_tile()) {
+							tile_index = meta.get_new_tile(curr_oam) * CUSTOM_SIZE;
+						} else {
+							tile_index = (ncgr.get_tile_data().size() / (8 * 8)) + meta.get_new_tile(curr_oam) * CUSTOM_SIZE;
+						}
+
 						obj_atr_2 &= 0xFC00;
 						obj_atr_2 += tile_index / TILE_INDEX_MULTIPLIER;
 

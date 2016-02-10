@@ -27,6 +27,7 @@ public:
 	int get_y_max();
 
 	int get_image(int oam);
+	bool has_existing_tile();
 private:
 	bool meta_exists = false;
 
@@ -45,6 +46,7 @@ private:
 	std::unordered_map<int, int> custom_y_map;
 
 	bool is_custom_oam = false;
+	bool is_existing_tile = false;
 	
 	std::vector<int> oams_change;
 	std::vector<int> oams_shift_only;
