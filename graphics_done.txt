@@ -1,5 +1,0 @@
-MainScEyeIcon
-MainScHowMuch
-MainScIcon2
-MainScItem
-MainScTitle2
