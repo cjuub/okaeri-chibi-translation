@@ -30,12 +30,12 @@ Another <1a06ff000003>%d<1a06ff00000d> dust left!
 <1a06ff000003>%d<1a06ff00000d> pieces of trash left!
 <1a0680010001>%s dirt cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
 <1a06ff000003>%d<1a06ff00000d> spots of dirt left!
-Slalom Time<N><1a06ff000003>Best: %d<1a06ff00000d>s<1a06ff000003>%02d
-Slalom Time<N>%ds%02d
-Slalom Record<N><1a06ff000003>%d<1a06ff00000d>s<1a06ff000003>%02d
+Slalom Time<N><1a06ff000003>Best: %d.%02d <1a06ff00000d>Seconds
+Slalom Time<N>%d.%02d Seconds
+Slalom Record<N><1a06ff000003>%d.%02d<1a06ff00000d> Seconds
 Slalom challange!
-With the Chibi-Bike you should<N>aim for %ds%02d!
-With the Honk Honk Patrol Car you<N>should aim for %ds%02d!
+With the Chibi-Bike you should<N>aim for %d.%02d seconds!
+With the Honk Honk Patrol Car you<N>should aim for %d.%02d seconds!
 Free kick record<1a06ff000003><N>%d<1a06ff00000d> Goal
 Fallen Washbowls Record:<N><1a06ff000003>%d<1a06ff00000d> Washbowls
 <1a0680010003>GOAL!!!!!!<1a0680010002>
@@ -44,9 +44,9 @@ Butt hit!!<N><1a0680010001>Another <1a06ff000003>%d<1a06ff00000d> butts left.<1a
 <1a0680010003>Giga-Mouse extermination<N>CLEAR!!!<1a0680010002>
 <1a0680010001>Large Bees.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001><1a06ff00000d> left.<1a0680010002>
 <1a0680010003>Bee extermination<N>CLEAR!!!<1a0680010002>
-Circuit time<N><1a06ff000003>Best: %d<1a06ff00000d>s<1a06ff000003>%02d
-Circuit time<N>%ds%02d
-Circuit record<N><1a06ff000003>%d<1a06ff00000d>s<1a06ff000003>%02d
+Circuit Time<N><1a06ff000003>Best: %d.%02d<1a06ff00000d> Seconds
+Circuit Time<N>%d.%02d Seconds
+Circuit Record<N><1a06ff000003>%d.%02d<1a06ff00000d> Seconds
 Circuit Challenge!
 
 <1a06ff000005>%d<1a06ff00000d> Happy Points
