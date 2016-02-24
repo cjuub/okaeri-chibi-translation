@@ -412,7 +412,7 @@ Ooh〜 It looks like the tomato<N>sales have increased.
 You have sold %d<N>Bright Red Tomatoes.
 You have sold %d<N>Green Tomatoes.
 Uh-oh, you have mixed<N>%d Mixed Tomatoes.
-You have earned %d<N>Moolah from sales!
+You earned %d Moolah<N>from the sales!
 Hm, what?
 
 <1a0680010003>Oh!<1a0680010002><N>That's a nice look!
@@ -424,7 +424,7 @@ When you feel like it or remember<N>it, then play a session with me!
 It'll be a waste<N>if you don't.
 
 
-Best Red Tomato: %d Moolah<N>Best other type: %d Moolah
+Red Tomato: At most %d Moolah<N>Other types: At most %d Moolah
 Red Tomato: %d Moolah<N>Other type: %d Moolah
 You'll get your payment<N>from Ketchup.
 
