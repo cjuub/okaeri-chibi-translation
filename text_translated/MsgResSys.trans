@@ -379,7 +379,7 @@ In TV shopping<1a068000000a>...<1a0680000003>
 『<1a06ff000009>%s<1a06ff00000d>』 is<N>now in <1a06ff000003>stock<1a06ff00000d>!
 Something just got in<N><1a06ff000003>stock<1a06ff00000d>!
 <1a06ff000009>%s<1a06ff00000d> is<N>now in <1a06ff000003>stock<1a06ff00000d>!
-＜%s＞<N>Cleanliness right now: <1a06ff000003>%d<1a06ff00000d>％<N>Best Cleanliness: %d％
+＜%s＞<N>Sparkle Rate right now: <1a06ff000003>%d<1a06ff00000d>％<N>Best Sparkle Rate: %d％
 
 <1a06ff000003>%d<1a06ff00000d> Washbowls<N>＜Record: %d Washbowls＞
 Fallen Washbowls Record<N>%d Washbowls<N>▼<N><1a06ff000003>%d<1a06ff00000d> Washbowls
@@ -476,7 +476,7 @@ Chibi-Vacuum
 Dust Bags
 Maintenance Machine
 How-Much Machine
-Cleanliness
+Sparkle Rate
 Chibi-Sieve
 Under Floor
 Post Pal
@@ -522,9 +522,9 @@ With the Maintenance Machine...
 You can spend Moolah in order<N>to make the Plug's cord longer!
 With the How-Much Machine...
 Items found with the Chibi-Sieve<N>can be converted to Moolah!
-The Cleanliness represents a<N>room's overall cleanliness.
+The Sparkle Rate represents a<N>room's overall cleanliness.
 It will increase as a room<N>becomes more clean.
-If the Cleanliness reaches <1a06ff000005>70<1a06ff00000d>％,<N>something good might happen...
+If the Sparkle Rate reaches <1a06ff000005>70<1a06ff00000d>％,<N>something good might happen...
 The trick to successfully<N>using the Sieve...
 Is to shake it with large<N>moves until a Gem appear.
 If the Gem is covered in<N>dust when it appears...
