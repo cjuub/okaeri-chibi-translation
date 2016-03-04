@@ -22,31 +22,31 @@
 *Click*!
 <1a0680010003>*Bang*!<1a0680010002>
 *Click*!
-<1a068000000a>And so<1a078004000a00><N>1 hour went past<1a0680000014>...<1a0680000003>
-<1a068000000a>And so<1a078004000a00><N>it became nighttime<1a0680000014>...<1a0680000003>
-<1a0680010001>%s dust cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
-Another <1a06ff000003>%d<1a06ff00000d> dust left!
-<1a0680010001>%s trash cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
-<1a06ff000003>%d<1a06ff00000d> pieces of trash left!
-<1a0680010001>%s dirt cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
-<1a06ff000003>%d<1a06ff00000d> spots of dirt left!
-Slalom Time<N><1a06ff000003>Best: %d.%02d <1a06ff00000d>Seconds
-Slalom Time<N>%d.%02d Seconds
-Slalom Record<N><1a06ff000003>%d.%02d<1a06ff00000d> Seconds
+<1a068000000a>And so<1a078004000a00> 1 hour<N>went past<1a0680000014>...<1a0680000003>
+<1a068000000a>And so<1a078004000a00> it became<N>nighttime<1a0680000014>...<1a0680000003>
+<1a0680010001>%s Dust cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
+Another <1a06ff000003>%d<1a06ff00000d> Dust left!
+<1a0680010001>%s Trash cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
+<1a06ff000003>%d<1a06ff00000d> pieces of Trash left!
+<1a0680010001>%s Dirt cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
+<1a06ff000003>%d<1a06ff00000d> spots of Dirt left!
+Slalom Time:<N><1a06ff000003>Best: %d.%02d <1a06ff00000d>Seconds
+Slalom Time:<N>%d.%02d Seconds
+Slalom Record:<N><1a06ff000003>%d.%02d<1a06ff00000d> Seconds
 Slalom challange!
 With the Chibi-Bike you should<N>aim for %d.%02d seconds!
-With the Honk Honk Patrol Car you<N>should aim for %d.%02d seconds!
-Free Kick Record<1a06ff000003><N>%d<1a06ff00000d> Goal
+With the Patrol Car you should<N>aim for %d.%02d seconds!
+Free Kick Record:<1a06ff000003><N>%d<1a06ff00000d> Goal
 Fallen Washbowls Record:<N><1a06ff000003>%d<1a06ff00000d> Washbowls
 <1a0680010003>GOAL!!!!!!<1a0680010002>
-Cooking Record<N><1a06ff000003>%d<1a06ff00000d> Points
-Butt hit!!<N><1a0680010001>Another <1a06ff000003>%d<1a06ff00000d> butts left.<1a0680010002>
-<1a0680010003>Giga-Mouse extermination<N>CLEAR!!!<1a0680010002>
-<1a0680010001>Large Bees.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001><1a06ff00000d> left.<1a0680010002>
-<1a0680010003>Bee extermination<N>CLEAR!!!<1a0680010002>
-Circuit Time<N><1a06ff000003>Best: %d.%02d<1a06ff00000d> Seconds
-Circuit Time<N>%d.%02d Seconds
-Circuit Record<N><1a06ff000003>%d.%02d<1a06ff00000d> Seconds
+Cooking Record:<N><1a06ff000003>%d<1a06ff00000d> Points
+Butt hit!!<N><1a0680010001>Another <1a06ff000003>%d<1a06ff00000d> butt hits left.<1a0680010002>
+<1a0680010003>Giga-Mouse extermination<N>CLEARED!!!<1a0680010002>
+<1a0680010001>Large Bees:<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001><1a06ff00000d> left.<1a0680010002>
+<1a0680010003>Bee extermination<N>CLEARED!!!<1a0680010002>
+Circuit Time:<N><1a06ff000003>Best: %d.%02d<1a06ff00000d> Seconds
+Circuit Time:<N>%d.%02d Seconds
+Circuit Record:<N><1a06ff000003>%d.%02d<1a06ff00000d> Seconds
 Circuit Challenge!
 
 <1a06ff000005>%d<1a06ff00000d> Happy Points
@@ -77,11 +77,11 @@ Keith's Room
 Bathroom
 Backyard
 Attic
-Under the Floor
+Under Floor
 
-Item<N>「<1a06ff000009>%s<1a06ff00000d>」
+Item:<N>「<1a06ff000009>%s<1a06ff00000d>」
 <1a06ff000004>%s
-You can't carry any more<N>items than that, you know.
+You can't carry any more items.
 
 Chibi-Vacuum
 Chibi-Sieve
@@ -89,7 +89,7 @@ Toothbrush
 Squirter
 Spoon
 Chibi-Bike
-Honk Honk Patrol Car
+Patrol Car
 Chibi-Airplane
 Super Chibi-Vacuum
 Super Chibi-Sieve
@@ -128,9 +128,9 @@ Something's Bone
 100 Greed
 Dirty Underwear
 Small Key
-Mixed Tomato
+Mix Tomato
 Habanero's Mask
-Freshly Made Cookie
+Freshly Baked Cookie
 Dust Bag
 Greed Tower
 Moolah Pouch
@@ -168,13 +168,13 @@ Memory Locket
 Chibi-Robo Replica
 Phantom's Secret Treasure
 
-Use the L or R buttons to switch<N>modes in order to suck up dust<N>and other things.
+Switch mode to vacuuming by<N>pressing the L or R button.
 With this you can sieve dust<N>you have collected.
-Use the L or R buttons to switch<N>modes to floor cleaning in order<N>to scrub away dirt.
-Use the L or R buttons to switch<N>modes to the Squirter in order to<N>raise plants.
-Use the L or R buttons to switch<N>modes to digging in order to search<N>for treasures under the ground.
-It's an economic<N>low energy vehicle.
-A vehicle with outstanding<N>speed.
+Switch mode to floor cleaning by<N>pressing the L or R button.
+Switch mode to water squirting by<N>pressing the L or R button.
+Switch mode to digging by<N>pressing the L or R button.
+An economic low<N>energy vehicle.
+A vehicle with<N>outstanding speed.
 A vehicle used to fly<N>freely in the air.
 Can clean without the need<N>for an outlet.
 It increases probability of<N>discovering Gems.
@@ -192,27 +192,27 @@ With this the suction<N>range will increase.
 With this the Watts<N>usage will be reduced.
 With this the floor vacuuming<N>speed will increase.
 Replacement Outlet
-Recover some Watts if you run<N>out.
+Recovers some Watts<N>when you run out.
 ...?
-Perhaps it would fit in a large<N>keyhole...?
+Perhaps it would fit in a<N>large keyhole...?
 [NO TRANSLATION NEEDED]
 [NO TRANSLATION NEEDED]
 [NO TRANSLATION NEEDED]
 [NO TRANSLATION NEEDED]
 [NO TRANSLATION NEEDED]
 [NO TRANSLATION NEEDED]
-What will happen if points are<N>gathered?
-Ripened Delicious Looking Tomato
-Unripe Looking Tomato
-Wedding Ring received from Karl
+What will happen if points<N>are gathered...?
+Ripened Delicious Tomato
+Unripe Tomato
+Wedding Ring Received from Karl
 Karl's Wedding Ring
 Heavy Looking Tool
-Fire That Makes You Numb
-Take notes on the back
+Hot enough to make you numb.
+Take notes on the back.
 Lucky's Favorite Thing
 Casino Chip...?
 Underpants I Don't Want To Touch
-Perhaps it would fit in a small<N>keyhole...?
+Perhaps it would fit in a<N>small keyhole...?
 Tomato Not Becoming Red
 Habanero's Precious Mask
 Tasty Baked Cookie
@@ -239,7 +239,7 @@ Candy
 Stained Heart Ghost
 Prideful Ghost
 Hitman Ghost
-Maximum Chibi-Watts will increase<N>by 20.
+Maximum Chibi-Watts will<N>increase by 20.
 The maximum number of<N>Dust Bags will increase.
 0 Points Test
 Molded Record
@@ -377,7 +377,7 @@ Load
 <1a0680010003><1a06ff000009>The house<1a06ff00000d> in its entirety<N>has become extremely<N><1a06ff000003>sparkling <1a06ff00000d>clean!
 In TV shopping<1a068000000a>...<1a0680000003>
 『<1a06ff000009>%s<1a06ff00000d>』 is<N>now in <1a06ff000003>stock<1a06ff00000d>!
-Something just got in<N><1a06ff000003>stock<1a06ff00000d>!
+Something just<N>got in <1a06ff000003>stock<1a06ff00000d>!
 <1a06ff000009>%s<1a06ff00000d> is<N>now in <1a06ff000003>stock<1a06ff00000d>!
 ＜%s＞<N>Sparkle Rate right now: <1a06ff000003>%d<1a06ff00000d>％<N>Best Sparkle Rate: %d％
 
@@ -392,7 +392,7 @@ Fallen Washbowls Record<N>%d Washbowls<N>▼<N><1a06ff000003>%d<1a06ff00000d> Wa
 <1a0680010001>It's TV shopping which has every<N>possible item you can imagine.
 <1a0680010001>The purchased items will be delivered<N>to your home before you know it.<1a0680010002>
 <1a0680010001>We look forward to your<N>next visit.
-Chibi-Robo you can't speak,<N>you know.
+Chibi-Robo you can't speak,<N>have you forgotten?
 「You can use the L or R button to<N>take note of the <1a06ff000003>item numbers<1a06ff00000d>.」
 
 <1a0680010003>【Fire Cookies】<1a0680010002><N><1a06ff000004>Protect the cookies<N>from the Ghosts!
@@ -421,7 +421,7 @@ Chibi-Robo you can't speak,<N>you know.
 
 Day <1a06ff000003>%d<1a06ff00000d>
 
-When your current Moolah becomes<N><1a06ff000003>negative<1a06ff00000d> you will not be able to<N>use it.
+If your Moolah becomes <1a06ff000003>negative<1a06ff00000d>,<N>you will not be able to use it.
 Right now the amount of Moolah you<N>can loan is MAX <1a06ff00000b>%d<1a06ff00000d> Moolah.
 The repayment should be<N>done within <1a06ff000003>%d<1a06ff00000d> cycles.
 The interest rate is<N><1a06ff000003>%.1f<1a06ff00000d>％ for each cycle.
@@ -431,7 +431,7 @@ Borrow Moolah?
 <1a0680010003>▲<1a0680010002><N> <N>Chibi-Loan<N><1a06ff00000b>%05d<1a06ff00000d> Moolah<N> <N><1a0680010003>▽<1a0680010002>
 Loaned: <1a06ff00000b>%d<1a06ff00000d> Moolah.<N>(Interest for next cycle is %d.)
 Repayment for each cycle<N>is about <1a06ff00000b>%d<1a06ff00000d> Moolah.
-You don't currently have<N>any Moolah you can loan.
+Right now there is no<N>Moolah that can be loaned.
 Right now your loaned<N>amount is <1a06ff00000b>%d<1a06ff00000d> Moolah.
 Repay everything?
 You don't have enough Moolah.
