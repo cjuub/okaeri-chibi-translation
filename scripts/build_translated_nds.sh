@@ -28,6 +28,7 @@ cp ./tmp/nscr_translated/* ./tmp/out/data/2d/
 echo " Done!";
 
 echo -n "Patching banner.bin..."
+printf '\x52\x89' | dd of=./tmp/out/banner.bin bs=1 seek=2 count=2 conv=notrunc 2> /dev/null
 for (( i = 576; i < 576 + 8 * 256; i += 256)); do
 	printf '\x57\x00\x65\x00\x6c\x00\x63\x00\x6f\x00\x6d\x00\x65\x00\x20\x00\x48\x00\x6f\x00\x6d\x00\x65\x00\x2c\x00\x0a\x00\x43\x00\x68\x00\x69\x00\x62\x00\x69\x00\x2d\x00\x52\x00\x6f\x00\x62\x00\x6f\x00\x21\x00\x00' | dd of=./tmp/out/banner.bin bs=1 seek=$i count=128 conv=notrunc 2> /dev/null
 done
