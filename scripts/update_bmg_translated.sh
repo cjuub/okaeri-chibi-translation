@@ -6,7 +6,7 @@ mkdir -p ./tmp/trans
 mkdir -p ./tmp/conv
 
 for i in ./text_translated/* ; do
-	if [ -d "$i" ]; then
+	if [ -d "$i" ] || [ $(basename "$i") == "LICENSE" ]; then
 		continue;
 	fi
 
