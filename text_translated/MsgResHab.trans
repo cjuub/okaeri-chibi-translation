@@ -2,7 +2,7 @@
 
 
 <1a0680000001>Tsk-<1a078004000500>tsk-<1a078004000500>tsk<1a078004000500><1a0680000003>.
-OUI!!
+<1a0680010003>OUI!!<1a0680010002>
 <1a0680010003>*Snap*!<1a0680010002>
 <1a0680010003>Ho-ho-ho.<1a0680010002>
 Ho-ho-ho.
@@ -10,7 +10,7 @@ On the contrary.
 
 <1a0a8002000101010304>T- <1a078004000a00>This is<1a068000000a>...<1a0680000003><N>Just what is this?<1a0a8002000000000000>
 <1a0680010003>I see!<1a0680010002>
-<1a0680010003>This is a<N>pro wrestler ring!<1a0680010002>
+<1a0680010003>This is a pro<N>wrestling ring!<1a0680010002>
 <1a0680010003>Oow-ow-ow!!<1a0680010002>
 W- <1a078004000a00>Who are you guys?
 Nice to meet you.
@@ -18,7 +18,7 @@ We're robots from<N>Citrusoft.
 We're helping Jenny out<N>around the house<1a068000000a>...<1a0680000003>
 <1a0680010003>On the contrary!<1a0680010002>
 Well, do you want to<N>become my pupils?
-Aren't you interested?
+You're really pumped<N>for that, right?
 That's what your eyes are<N>saying, isn't it?
 <1a0680010003>Well then!<1a0680010002>
 <1a0680010003>Then I'll teach you how to<N>become a pro wrestler!<1a0680010002>
@@ -26,17 +26,17 @@ That's what your eyes are<N>saying, isn't it?
 <1a068000000a>...<1a0680000003>No, that didn't feel right.
 Then I'll teach you how<N>to be a pro wrestler!
 <1a0680010003><1a06ff000003>Habanero The Giant<N><1a06ff00000d> will teach you!<1a0680010002>
-But first you need to<N>pay the <1a06ff000003>entrence fee<1a06ff00000d>.
+But first you need to<N>pay the <1a06ff000003>admission fee<1a06ff00000d>.
 It's been a while since I had a<N>pupil, so I'm a bit excited.
 It appears I will have to do<N>some volunteer work.
 On the contrary.
 Now then, it's only<N><1a06ff00000b>%d<1a06ff00000d> Moolah!
 <1a068000000a>...<1a0680000003>O- <1a078004000a00>Okay.<N>I- <1a078004000a00><1a068000000a>I might have exaggerated.<1a0680000003>
-How about an entrence campaign.<N>Will <1a06ff00000b>%d<1a06ff00000d> Moolah be fine?
+How about an admission campaign.<N>Will <1a06ff00000b>%d<1a06ff00000d> Moolah be fine?
 <1a068000000a>...<1a0680000003>But,<N>You don't even have that.
 You're just a bother, go away.
 What?<N>You don't have it?
-If you have something to say<N>then don't enter the ring.
+If you have something to say<N>then come up to the ring.
 It's basic manners.
 
 What's that, Chibi-Robo?
@@ -46,17 +46,17 @@ Hm<1a068000000a>...<1a0680000003>?
 <1a068000000a>That guy...<N>Perhaps <1a078004000a00>he's...?<1a0680000003>
 T-<1a078004000a00> T- <1a078004000a00>T-<1a078004000a00><1a068000000a>...<1a0680000003>
 <1a0680010003>The real deal!?<1a0680010002>
-
-
-You sure have a cute<N>face don't you!
+Why do I have to put up with<N>such vulgar behavior...
+Isn't that what makes people<N>fight in the first place?
+You sure have a cute<N>face don't you!?
 I was absolutely<N>certain that...
 You would pay with<N>Bottle Caps or something.
 <1a0680010003>On the contrary!<N>I like that!<1a0680010002>
-<1a0680010003>Well then!<1a0680010002><N>I'll show you my special<1a0680000014>...<1a0680000003>
+<1a0680010003>Well then!<1a0680010002><N>I'll show you my special move<1a0680000014>...<1a0680000003>
 When I get excited,<N><1a068000000a><1a0680010001>I get hungry.<1a0680010002><1a0680000003>
-<1a0680010001>I haven't eaten anything<N>but 8 tomatoes this morning.<1a0680010002>
+<1a0680010001>I haven't eaten anything but<N>8 tomatoes this morning.<1a0680010002>
 <1a0680000000><1a06ff000003>*Pling*<1a0680000003>
-<1a0680010003>Hey, <1a078004001400>pupil!<1a0680010002><N>Bring me <1a06ff000009>Tomatoes<1a06ff00000d>!
+<1a0680010003>Hey, <1a078004001400>pupil!<1a0680010002><N>Bring me some <1a06ff000009>Tomatoes<1a06ff00000d>!
 That's your first <1a06ff000003>assignment<1a06ff00000d>!<N>Yeah,<1a078004000a00> that's right.<1a078004000a00> Do that!
 Of course, <1a078004000a00>no bright red ones.<N>I want <1a06ff000009>gross green tomatoes<1a06ff00000d>.
 Furthermore,<N>I need <1a06ff000005>2<1a06ff00000d> of them!
@@ -73,11 +73,11 @@ Bring me one more.
 One<1a068000000a>... <1a0680000003>Two<1a068000000a>... <1a0680000003>Three<1a068000000a>...<1a0680000003>
 <1a0680000000><1a0680010003>Well then.<1a0680010002><1a0680000003>
 There we go. <1a078004000500>It's done.
-I'll give you the<N>first one as a reward!
+First, I will give you<N>your reward!
 Here!<N>It's a <1a06ff000009>Spicy Tomato<1a06ff00000d>.
 Uh-oh!
 Don't give it to that<N><1a06ff000003>shark<1a06ff00000d> though.
-She said she loved tomatoes so<N>I gave her a spicy tomato.
+She said she loved tomatoes, so<N>I gave her a spicy tomato.
 <1a0680010003>SPICY〜!<1a0680010002>
 Was what she said... While<N>rampaging around.
 It wasn't my fault<1a068000000a>...<1a0680000003>
@@ -85,13 +85,13 @@ It makes me sick!
 Anyways!
 Don't give it to her!
 Uh-oh!
-But I don't care<N>about that shark anyway.
+But I don't care about<N>that shark anyway.
 I'll just munch right in.
 <1a0680010003>THIS IS IT!!<1a0680010002>
 Gross and spicy is the<N>absolute best tag-team!
 If I want more of them,<N>I'll just make them myself.
 <1a0680010003>Well then!<1a0680010002><N>That made psyched up!
-I'll teach you<N>my <1a06ff000003>special skill<1a06ff00000d>!
+I'll teach you<N>my <1a06ff000003>special move<1a06ff00000d>!
 <1a0680010003>Well then,<N>let's start!<1a0680010002>
 When facing your enemy<1a068000000a>...<1a0680000003>
 <1a0680010003>Do this!!<1a0680010002>
@@ -106,9 +106,9 @@ Well then!<N>Try it out you too!
 <1a0680010003>Now!<1a0680010002>
 It doesn't look like your<N>close to being fast enough.
 <1a0680010003>Well then!<1a0680010002><N>It's time for more training.
-By looking at you I can say that<N>you don't have enough power.
+By looking at you I can say that<N>you don't have enough <1a06ff000003>power<1a06ff00000d>.
 So use that <1a06ff000003>dumbbell<1a06ff00000d>!
-W-<1a078004000a00> Well I guess they're very...
+W-<1a078004000a00> Well I guess they're a bit...
 The humans<1a068000000a>...<1a0680000003> Well<1a068000000a>...<1a0680000003><N>They are much stronger.
 We're better of focusing<N>on things that's our size.
 Yeah, right<1a068000000a>...<1a0680000003><N>Anyways, get <1a06ff000005>3<1a06ff00000d> of those!
@@ -160,7 +160,7 @@ It's an ultra-super<N><1a0680010003>POWER-UP!!<1a0680010002>
 Well then!<N>Hurry up and try it out!
 
 Are you finished?
-Ho-ho!<N>You got some strong points!
+Ho-ho!<N>You're not half-bad!
 Well then!<N>Knock over various books...
 Keep on training!
 Keep on going<N>until the end.
@@ -190,7 +190,7 @@ Let's get closer and<N>see what's going on.
 <1a0680010001>...!!!<1a0680010002>
 What did I do...?
 <1a0680010003><1a0680000000>Shut up!<N>Just shut up!<1a0680000003><1a0680010002>
-<1a0680010003>Aaargh!<1a0680010002><N>How dare you!!
+<1a0680010003>Aaargh!<1a0680010002><N>How dare you!?
 Hm? <1a078004000a00>You know these guys?
 <1a068000000a>...<1a0680000003>Um, did that guy<1a078004000a00><N>go back home?
 Of course <1a078004000a00>I know them!<N><1a0680010003>They're the ones who made<N>me drift down here!<1a0680010002>
@@ -204,7 +204,7 @@ Then why did they do that to me even<N>though I hadn't done anything!!
 My pupil's eyes tells me that<N>you indeed did something.
 Pupil, pupil, pupil.<N>Just shut up, you.
 Lately, even <1a06ff000009>Keith<1a06ff00000d> doesn't<N>care about you anymore.
-Does that mean he's looking up<N>to some other guy than you?
+Does that mean he's looking up<N>to some other guy nowadays?
 Ah, <1a078004000a00>aren't boys mean!
 <1a0680010003>N-<1a078004000a00> No!<1a0680010002><N><1a068000000a><1a0680010001>That's not how it is.<1a0680000003><1a0680010002>
 I'm the original champion.<N>And I'm not just saying that.
@@ -241,7 +241,7 @@ IDLE CHATTER<1a078004000a00> IS FORBIDDEN.<1a078004000a00>
 HURRY UP <1a078004000a00>AND DO <1a078004000a00>YOUR WORK<1a078004000a00>.
 <1a0680000014>......<1a0680000003>
 Well, <1a078004000a00>actually<1a068000000a>...<1a0680000003>
-Back when I used to come<N>to the Attic...
+Back when I used to<N>come to the Attic...
 The Casino wasn't<N>even built yet.
 Back when I was the champion...
 The Attic had nothing but a<N>cardboard box wrestling ring.
@@ -257,7 +257,7 @@ It now has to be a 2 man<N><1a06ff000003>tag-team match<1a06ff00000d>.
 Pupil! <1a078004000a00>Fight with me!
 Will<1a078004000a00> you join a match!?
 <1a0680010003>THANKS!<1a0680010002>
-<1a0680010003>Well then!<1a0680010002><N>The inspection is soon.
+<1a0680010003>Well then!<1a0680010002><N>The inspection is coming up.
 I'll do the preparations!
 The match is starting.
 WE'RE FULL <1a078004000a00>RIGHT NOW.<1a078004000a00><N>GO HOME.<1a078004000a00>
@@ -286,7 +286,7 @@ What?
 <1a0680010003><1a0680000000><1a0a8002000102020304>UH-OH!<1a0a8002000000000000><1a0680010002><1a0680000003><N>Look who's coming!
 What? What's up with that<N>weird dance your doing?
 W- <1a078004000a00>W- <1a078004000a00> W-<1a078004000a00><N><1a0680010003>What is that!?<1a0680010002>
-It looks like this match won't<N>last for too long, huh.
+It looks like this match won't<N>last for too long, huh?
 <1a068000000a>H- <1a078004000a00>H- <1a078004000a00>Hey, pupil.<1a0680000003><N><1a0a8002000103030203><1a0680010001>Don't get cold feet!<1a0680010002><1a0a8002000000000000>
 The original champion<N>looks a little bit scared!
 <1a0a8002000103030203><1a0680010003>Shut up!<1a0680010002><1a0a8002000000000000>
@@ -325,7 +325,7 @@ Partner!!!
 U- <1a078004000a00>Umm<1a068000000a>...<1a0680000003>
 <1a068000000a>Damn it...<N>My partner...<1a0680000003>
 Don't look!
-I'm a wrestler<N>without his mask<1a068000000a>...<1a0680000003>
+I'm a wrestler<N>without a mask<1a068000000a>...<1a0680000003>
 A hamburger without pickles!
 I don't really want pickles on...
 <1a0680010003>S- <1a078004000a00>SHUT UP!<1a0680010002><N>Go away!
@@ -364,8 +364,8 @@ Don't get close to me!
 Partner<1a068000000a>...<1a0680000003>!
 <1a068000000a>Running made me tired...<1a0680000003>
 Anyways...<N>That shark<1a068000000a>...<1a0680000003>
-I though she looked<N>better with fangs.
-
+I thought she looked<N>better with fangs.
+Oh well, <1a078004000f00>I'm going to spend some<N>time with my partner now.
 
 <1a0680010003>This is bad!<1a0680010002>
 Huh?<N>What's happening?
@@ -380,19 +380,19 @@ I know he's worried.
 <1a068000000a>But he doesn't even<N>know where to go...<1a0680000003>
 
 <1a0680010003>Ow-ow-ow!<1a0680010002>
-My ass is tightly stuck.
-It's probably easier if I<N>can <1a06ff000003>flow<1a06ff00000d> through somehow...
+My bottom is tightly stuck.
+It would probably be easier if I<N>could <1a06ff000003>flow<1a06ff00000d> through somehow...
 <1a06ff000004>*Flushing*<1a0680000014>...<1a0680000003>
 *Gargle* *Gargle*...
 <1a068000000a>......<1a0680000003>
 <1a0680000014>Water is my weak point...<1a0680000003>
 <1a068000000a>*Gurgle*...<1a0680000003>
 <1a068000000a>*Gurgle* *Gurgle*<1a0680000003>
-Why<1a078004000a00> did you come?
-
+Why<1a078004000a00> did you come here?
+*Gurgle*<1a068000000a>...<1a0680000003> <1a068000000a>It's not like<N>I wanted to come here.<1a0680000003>
 <1a0680010001>That's...<1a0680010002>
 <1a0680010001>Isn't that the <1a06ff000003>fragment<1a06ff00000d> that<N>was inside my partner?<1a0680010002>
-
+Anyway...<1a068000000a> *Gurgle*<1a0680000003>
 
 
 
