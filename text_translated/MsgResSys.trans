@@ -24,11 +24,11 @@
 *Click*!
 <1a068000000a>And so<1a078004000a00> 1 hour<N>went past<1a0680000014>...<1a0680000003>
 <1a068000000a>And so<1a078004000a00> it became<N>nighttime<1a0680000014>...<1a0680000003>
-<1a0680010001>%s Dust cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
+<1a0680010001>%s Dust cleaned up.<1a0680010002><N>Another <1a06ff000003>%d <1a06ff00000d>left<1a0680010002>.
 Another <1a06ff000003>%d<1a06ff00000d> Dust left!
-<1a0680010001>%s Trash cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
+<1a0680010001>%s Trash cleaned up.<1a0680010002><N>Another <1a06ff000003>%d <1a06ff00000d>left<1a0680010002>.
 <1a06ff000003>%d<1a06ff00000d> pieces of Trash left!
-<1a0680010001>%s Dirt cleaned up.<1a0680010002><N>Another <1a06ff000003>%d<1a0680010001> <1a06ff00000d>left<1a0680010002>.
+<1a0680010001>%s Dirt cleaned up.<1a0680010002><N>Another <1a06ff000003>%d <1a06ff00000d>left<1a0680010002>.
 <1a06ff000003>%d<1a06ff00000d> spots of Dirt left!
 Slalom Time:<N><1a06ff000003>Best: %d.%02d <1a06ff00000d>Seconds
 Slalom Time:<N>%d.%02d Seconds
@@ -176,8 +176,8 @@ Switch mode to digging by<N>pressing the L or R button.
 An economic low<N>energy vehicle.
 A vehicle with<N>outstanding speed.
 A vehicle used to fly<N>freely in the air.
-Can clean without the need<N>for an outlet.
-It increases probability of<N>discovering Gems.
+It can clean without the<N>need for an outlet.
+It increases probability<N>of finding Gems.
 With this you can<N>become a policeman.
 With this you can<N>become an army soldier.
 With this you can<N>swim underwater.
@@ -186,10 +186,10 @@ Be able to play the guitar.
 A bird who can't fly...
 With this you will get a<N>cool tuxedo look.
 With this you can use<N>Telly at Telly Marks.
-With this you'll be able to spin<N>the plug and throw it like a ball.
+With this you will be able to spin<N>the plug and throw it like a ball.
 With this you can vacuum<N>dirt, water and graffiti.
-With this the suction<N>range will increase.
-With this the Watts<N>usage will be reduced.
+With this the suction range will<N>increase when vacuuming.
+With this the Watts usage when<N>vacuuming will be reduced.
 With this the floor vacuuming<N>speed will increase.
 Replacement Outlet
 Recovers some Watts<N>when you run out.
@@ -207,7 +207,7 @@ Unripe Tomato
 Wedding Ring Received from Karl
 Karl's Wedding Ring
 Heavy Looking Tool
-Hot enough to make you numb.
+It's hot enough to make you numb.
 Take notes on the back.
 Lucky's Favorite Thing
 Casino Chip...?
@@ -417,7 +417,7 @@ Chibi-Robo you can't speak,<N>have you forgotten?
 
 <1a06ff000004><1a06ff000009>%s<1a06ff000004> has been<N>placed in %s!
 <1a06ff000004>Let's give some color to<N>the <1a06ff000009>%s<1a06ff000004><1a06ff000004>!
-<1a06ff000009>%s<1a06ff000004>'s interior has been<N>beautifully arranged!!
+<1a06ff000009>%s<1a06ff000004>'s interior has<N>been beautifully arranged!!
 
 Day <1a06ff000003>%d<1a06ff00000d>
 
@@ -505,7 +505,7 @@ Then you will be asked if you<N>want to save the game!
 Use the D-pad or the ABXY buttons<N>to look around the area!
 Using the Chibi-Eyes found<N>in the Chibi-Menu...
 You'll be able to search for Trash,<N>Dust, Outlets, and more!
-When facing obstacles with<N>similar height as Chibi-Robo...
+When facing an obstacle with<N>similar height as Chibi-Robo...
 Make Chibi-Robo walk into<N>it for a little while...
 He will then perform a short jump<N>in order to climb the obstacle!
 Chibi-Robo can climb things<N>like cords and strings!
@@ -731,12 +731,12 @@ Do you want to erase<N>all save data?
 Erasing all save data.<N>Erased data can not be restored,<N>are you really sure?
 Now saving.<N>Please do not turn off the power<N>or remove the game card.
 
-<1a06ff000004><1a0680000000>＜Mesa's toy box＞<N>Length: 24cm<N>Characteristic: Amazing tusks.<N>Favorite food: Tomato<N>Weak point: Spicy things.<N>※Goes numb if given<N>spicy things<1a068000001e>...<1a0680000003>
+<1a06ff000004><1a0680000000>＜Mesa's toy box＞<N>Length: 24cm<N>Characteristic: Amazing fangs.<N>Favorite food: Tomato<N>Weak point: Spicy things.<N>※Goes numb if given<N>spicy things<1a068000001e>...<1a0680000003>
 <1a06ff000004>It's broken and can not be read.
 <1a06ff000004><1a0680000000>＜Habanero's toy box＞<N>Length: 10cm<N>Favorite food: Spicy things.<N>Weak point: Water.<N>Special skill: Habanero Chop.<N>※Swells up if soaked in water.<1a0680000003>
 <1a06ff000004><1a0680000000>＜Acappella's toy box＞<N>Length: 17cm<N>Type: Alarm clock.<N>Yearning: The big city.<N>Pride: Voice.<N>※Warning for noisy sounds.<1a0680000003>
 <1a06ff000004><1a0680000000>＜Iberico's toy box＞<N>Length: 19cm<N>Dream: Become a Super Policeman.<N>Beloved car: Patrol Car.<N>Strong point: Fast eating.<N>※Start the sirens!<1a0680000003>
-<1a06ff000004><1a0680000000>＜Ketchup's toy box＞<N>Length: 21cm<N>Strong point: Growing tomatos.<N>Favorite place: Gardens with soil.<N>Pride: Guitar technique.<N>Common phrase: 〜chup<1a0680000003>
+<1a06ff000004><1a0680000000>＜Ketchup's toy box＞<N>Length: 21cm<N>Strong point: Growing tomatoes.<N>Favorite place: Gardens with soil.<N>Pride: Guitar technique.<N>Common phrase: 〜chup<1a0680000003>
 
 <1a0680000006>STAFF CREDITS
 <1a0680000006>DIRECTOR<N><N>Hiroshi Moriyama
