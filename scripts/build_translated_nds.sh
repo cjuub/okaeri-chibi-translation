@@ -34,6 +34,16 @@ for (( i = 576; i < 576 + 8 * 256; i += 256)); do
 done
 echo " Done!";
 
+echo -n "Patching ARM9 overlays..."
+./blz -d ./tmp/out/overlay/overlay_0028.bin > /dev/null
+
+printf '\x57\x68\x61\x74\x27\x73\x20\x74\x68\x69\x73\x3f\x00\x00\x00\x00' | dd of=./tmp/out/overlay/overlay_0028.bin bs=1 seek=70232 count=16 conv=notrunc 2> /dev/null
+# printf '\x44\x65\x74\x61\x69\x6c\x00\x00' | dd of=./tmp/out/overlay/overlay_0028.bin bs=1 seek=70248 count=8 conv=notrunc 2> /dev/null
+
+
+./blz -en ./tmp/out/overlay/overlay_0028.bin > /dev/null
+echo " Done!";
+
 echo -n "Repacking files into ROM..."
 ./tools/ndstool -c chibi_mod.nds -9 ./tmp/out/arm9.bin -7 ./tmp/out/arm7.bin -y9 ./tmp/out/y9.bin -y7 ./tmp/out/y7.bin -d ./tmp/out/data -y ./tmp/out/overlay -t ./tmp/out/banner.bin -h ./tmp/out/header.bin > /dev/null
 echo " Done!"

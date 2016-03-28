@@ -1,5 +1,5 @@
 CXX = g++
-CC  = g++
+CC  = gcc
 
 CPPFLAGS =  -std=c++11
 CXXFLAGS =  -O2 -Wall -Wextra -pedantic-errors -Wold-style-cast 
@@ -14,7 +14,7 @@ SRCS2 = src/ncgr.cpp src/ncer.cpp src/nscr.cpp src/lodepng.cpp src/image_tool.cp
 OBJS2 = $(subst .cpp,.o,$(SRCS2))
 
 # Targets
-PROGS = text_tool image_tool png_merge txt_merge
+PROGS = text_tool image_tool png_merge txt_merge blz
 
 all: $(PROGS)
 
@@ -30,6 +30,9 @@ png_merge: src/png_merge.o src/lodepng.o
 
 txt_merge: src/txt_merge.o
 		$(CXX) $(LDFLAGS) -o txt_merge src/txt_merge.o $(LDLIBS)
+
+blz: src/blz.o
+	$(CC) -o blz src/blz.o
 
 # Phony targets
 .PHONY: all clean
