@@ -28,6 +28,12 @@ inline uint16_t read_little_endian_16(std::ifstream& ifs) {
 	return val;
 }
 
+inline uint8_t read_little_endian_8(std::ifstream& ifs) {
+	char b;
+	ifs.get(b);
+	return static_cast<uint8_t>(b);
+}
+
 inline void write_little_endian_32(std::ofstream& ofs, uint32_t val) {
 	ofs << static_cast<char>(val & 0xFF);
 	ofs << static_cast<char>((val >> 8) & 0xFF);
