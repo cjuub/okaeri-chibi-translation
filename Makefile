@@ -10,7 +10,7 @@ LDFLAGS =   -g
 SRCS1 = src/bmg.cpp src/text_tool.cpp
 OBJS1 = $(subst .cpp,.o,$(SRCS1))
 
-SRCS2 = src/ncgr.cpp src/ncer.cpp src/nscr.cpp src/lodepng.cpp src/image_tool.cpp src/graphic_meta.cpp
+SRCS2 = src/ncgr.cpp src/ncer.cpp src/nscr.cpp src/lodepng.cpp src/image_tool.cpp src/graphic_meta.cpp src/nsbmd.cpp
 OBJS2 = $(subst .cpp,.o,$(SRCS2))
 
 # Targets
