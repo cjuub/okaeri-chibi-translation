@@ -68,8 +68,6 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 		read_little_endian_8(ifs);
 		read_little_endian_8(ifs);
 		
-		printf("%d %d\n", width, height);
-
 		vector<unsigned char> img;
 		for (unsigned y = 0; y != height; ++y) {
 			for (unsigned x = 0; x != width; ++x) {

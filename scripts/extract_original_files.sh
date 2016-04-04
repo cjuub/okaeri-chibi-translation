@@ -15,13 +15,18 @@ cp ./tmp/out/data/2d/*.NCGR ./tmp/nxxx_original
 cp ./tmp/out/data/2d/*.NSCR ./tmp/nxxx_original
 rm ./tmp/nxxx_original/SandBGDef.*
 rm ./tmp/nxxx_original/SandPan.*
+mkdir -p ./tmp/nsbmd_original
+cp ./tmp/out/data/mdl/DrainFloor.nsbmd ./tmp/nsbmd_original
+cp ./tmp/out/data/mdl/policeTestWin.nsbmd ./tmp/nsbmd_original
+cp ./tmp/out/data/mdl/policeTestLose.nsbmd ./tmp/nsbmd_original
+cp ./tmp/out/data/mdl/policeTestMiss.nsbmd ./tmp/nsbmd_original
 echo " Done!"
 
 echo -n "Extracting text into folder text_original..."
 ./scripts/extract_text_original.sh
 echo " Done!"
 
-echo -n "Extracting images into folders ncer_image_original and nscr_image_original..."
+echo -n "Extracting images into folders ncer_image_original, nscr_image_original and nsbmd_image_original..."
 ./scripts/extract_image_original.sh
 echo " Done!"
 
