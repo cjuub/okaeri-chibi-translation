@@ -60,10 +60,12 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 	vector<unsigned char> img;
 	for (unsigned y = 0; y != height; ++y) {
 		for (unsigned x = 0; x != width; ++x) {
-			unsigned char color = nsbmd_vector[x + y * width] & 0x1F;
-			unsigned char alpha = nsbmd_vector[x + y * width] >> 5;
+			unsigned color_index = pos + texture_data_offs + x + y * width;
+			unsigned char color = nsbmd_vector[color_index] & 0x1F;
+			unsigned char alpha = nsbmd_vector[color_index] >> 5;
 
-			color = (color + 1) * 3;
+			// shift 3 to make the "fake" grayscale colors stronger
+			color = color << 3;
 			alpha = ((alpha * 4) + (alpha / 2)) * 8;
 			
 			img.push_back(color);
