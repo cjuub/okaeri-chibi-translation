@@ -3,8 +3,13 @@
 #include "lodepng.h"
 
 #include <fstream>
+#include <sstream>
 #include <vector>
 #include <algorithm>
+
+#define SSTR( x ) dynamic_cast< std::ostringstream & >( \
+        ( std::ostringstream() << std::dec << x ) ).str()
+
 
 using namespace std; 
 
@@ -46,36 +51,76 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 	uint8_t nbr_objects = read_little_endian_8(ifs);
 	uint16_t size_3d_info_section = read_little_endian_16(ifs);
 
-	ifs.seekg(pos + texture_info_offs + size_3d_info_section);
-	read_little_endian_16(ifs);
-	uint16_t params = read_little_endian_16(ifs);
-	
-	// is this really correct?
-	unsigned height = read_little_endian_8(ifs) << 3;
-	read_little_endian_8(ifs);
-	unsigned width = read_little_endian_8(ifs) << 3;
+	// skip to info blocks
+	ifs.seekg(static_cast<unsigned>(ifs.tellg()) + 12 + 4 * nbr_objects);
 
-	// printf("%d %d\n", width, height);
+	for (int i = 0; i != nbr_objects; ++i) {
+		read_little_endian_16(ifs);
 
-	vector<unsigned char> img;
-	for (unsigned y = 0; y != height; ++y) {
-		for (unsigned x = 0; x != width; ++x) {
-			unsigned color_index = pos + texture_data_offs + x + y * width;
-			unsigned char color = nsbmd_vector[color_index] & 0x1F;
-			unsigned char alpha = nsbmd_vector[color_index] >> 5;
+		uint16_t params = read_little_endian_16(ifs);
 
-			// shift 3 to make the "fake" grayscale colors stronger
-			color = color << 3;
-			alpha = ((alpha * 4) + (alpha / 2)) * 8;
-			
-			img.push_back(color);
-			img.push_back(color);
-			img.push_back(color);
-			img.push_back(alpha);
+		unsigned width = 8 << ((params >> 4) & 0x7);
+		unsigned height = 8 << ((params >> 7) & 0x7);
+		unsigned format = (params >> 10) & 0x7;
+
+		read_little_endian_8(ifs);
+		read_little_endian_8(ifs);
+		read_little_endian_8(ifs);
+		read_little_endian_8(ifs);
+		
+		printf("%d %d\n", width, height);
+
+		vector<unsigned char> img;
+		for (unsigned y = 0; y != height; ++y) {
+			for (unsigned x = 0; x != width; ++x) {
+				unsigned color_index = pos + texture_data_offs + x + y * width;
+				unsigned char color;
+				unsigned char alpha;
+
+				if (format == 1) {
+					color = nsbmd_vector[color_index] & 0x1F;
+					alpha = nsbmd_vector[color_index] >> 5;
+					alpha = ((alpha * 4) + (alpha / 2)) * 8;
+
+					// shift 3 to make the "fake" grayscale colors stronger
+					color = color << 3;
+				
+					img.push_back(color);
+					img.push_back(color);
+					img.push_back(color);
+					img.push_back(alpha);
+
+				} else if (format == 3) {
+					alpha = 255;
+
+					color = nsbmd_vector[color_index] & 0xF;
+					// shift 4 to make the "fake" grayscale colors stronger
+					color = color << 4;
+					img.push_back(color);
+					img.push_back(color);
+					img.push_back(color);
+					img.push_back(alpha);
+
+					color = (nsbmd_vector[color_index] & 0xF0) >> 4;
+					// shift 4 to make the "fake" grayscale colors stronger
+					color = color << 4;
+					img.push_back(color);
+					img.push_back(color);
+					img.push_back(color);
+					img.push_back(alpha);
+				}
+			}
 		}
-	}
 
-	lodepng::encode(out_folder, img, width, height);
+		if (format == 3) {
+			texture_data_offs += width * height / 2;
+		} else {
+			texture_data_offs += width * height;
+		}
+
+		string img_out(out_folder + "/" + SSTR(i) + ".png"); 
+		lodepng::encode(img_out, img, width, height);
+	}
 
 	ifs.close();
 }
