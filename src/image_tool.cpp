@@ -67,5 +67,13 @@ int main(int argc, char* argv[]) {
 		ncgr.load_tiles(ncgr_file);
 
 		nscr.insert_image(ncer_file, ncgr, bmp_folder, ncgr_out, nscr_out);
-	}
+	} else if (option == "-i3") {
+        NSBMD nsbmd;
+
+        string nsbmd_file(argv[2]);
+        string img_folder(argv[3]);
+        string nsbmd_out(argv[4]);
+
+        nsbmd.insert_textures(nsbmd_file, img_folder, nsbmd_out);
+    }
 }
