@@ -76,15 +76,27 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
             check.close();
         } else {
             check.close();
+ 
+            if (format == 3) {
+                texture_data_offs += width * height / 2;
+            } else {
+                texture_data_offs += width * height;
+            }
+            
             continue;
         }
 
-		for (unsigned y = 0; y != height; ++y) {
+        unsigned x2 = 0;
+		for (unsigned y = 0; y != height / 2; ++y) {
 			for (unsigned x = 0; x != width; ++x) {
-				unsigned color_index = (x + y * width) * 4;
+				unsigned color_index = (x + x2 + y * width) * 4;
                 unsigned texture_data_index = pos + texture_data_offs + x + y * width;
 				unsigned char color;
 				unsigned char alpha;
+
+                if (texture_data_index == 58528) {
+                    printf("hej\n");
+                }
 
 				if (format == 1) {
 					color = img[color_index] >> 3;
@@ -94,21 +106,12 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
 				} else if (format == 3) {
 					alpha = 255;
 
-					color = nsbmd_vector[color_index] & 0xF;
-					// shift 4 to make the "fake" grayscale colors stronger
-					color = color << 4;
-					img.push_back(color);
-					img.push_back(color);
-					img.push_back(color);
-					img.push_back(alpha);
+					color = img[color_index] >> 4;
+                    nsbmd_vector_mod[texture_data_index] = color;
+					color = img[color_index + 4];
+                    nsbmd_vector_mod[texture_data_index] += color;
 
-					color = (nsbmd_vector[color_index] & 0xF0) >> 4;
-					// shift 4 to make the "fake" grayscale colors stronger
-					color = color << 4;
-					img.push_back(color);
-					img.push_back(color);
-					img.push_back(color);
-					img.push_back(alpha);
+                    ++x2;
 				}
 			}
 		}
@@ -188,7 +191,7 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 					color = color << 3;
 				
 					img.push_back(color);
-					img.push_back(alpha);
+					img.push_back(alpha); // hacky, store alpha as green make editing easier
 					img.push_back(color);
 					img.push_back(0xFF);
 
