@@ -13,6 +13,8 @@ cp ./tmp/out/data/2d/*.NCGR ./tmp/nxxx_original
 cp ./tmp/out/data/2d/*.NSCR ./tmp/nxxx_original
 rm ./tmp/nxxx_original/SandBGDef.*
 rm ./tmp/nxxx_original/SandPan.*
+mkdir -p ./tmp/nsbmd_original
+cp ./tmp/out/data/mdl/*.nsbmd ./tmp/nsbmd_original
 echo " Done!"
 
 echo -n "Generating BMG from translated texts...";
@@ -25,6 +27,11 @@ echo -n "Generating NCGR/NCER/NSCR from translated images..."
 cp ./tmp/ncgr_translated/* ./tmp/out/data/2d/
 cp ./tmp/ncer_translated/* ./tmp/out/data/2d/
 cp ./tmp/nscr_translated/* ./tmp/out/data/2d/
+echo " Done!";
+
+echo -n "Generating nsbmd from translated textures..."
+./scripts/update_nsbmd_translated.sh
+cp ./tmp/nsbmd_translated/* ./tmp/out/data/mdl/
 echo " Done!";
 
 echo -n "Patching banner.bin..."
