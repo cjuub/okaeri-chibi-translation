@@ -86,8 +86,13 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
             continue;
         }
 
+        unsigned y_end = height;
+        if (format == 3) {
+            y_end /= 2;
+        }
+
         unsigned x2 = 0;
-		for (unsigned y = 0; y != height / 2; ++y) {
+		for (unsigned y = 0; y != y_end; ++y) {
 			for (unsigned x = 0; x != width; ++x) {
 				unsigned color_index = (x + x2 + y * width) * 4;
                 unsigned texture_data_index = pos + texture_data_offs + x + y * width;
