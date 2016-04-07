@@ -79,6 +79,8 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
  
             if (format == 3) {
                 texture_data_offs += width * height / 2;
+            } else if (format == 2) {
+                texture_data_offs += width * height / 4;
             } else {
                 texture_data_offs += width * height;
             }
@@ -89,6 +91,8 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
         unsigned y_end = height;
         if (format == 3) {
             y_end /= 2;
+        } else if (format == 2) {
+            y_end /= 4;
         }
 
         unsigned x2 = 0;
@@ -99,17 +103,13 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
 				unsigned char color;
 				unsigned char alpha;
 
-                if (texture_data_index == 58528) {
-                    printf("hej\n");
-                }
-
 				if (format == 1) {
 					color = img[color_index] >> 3;
 					alpha = img[color_index + 1];
 
                     nsbmd_vector_mod[texture_data_index] = alpha + color;
 				} else if (format == 3) {
-					alpha = 255;
+					alpha = 0xFF;
 
 					color = img[color_index] >> 4;
                     nsbmd_vector_mod[texture_data_index] = color;
@@ -117,13 +117,28 @@ void NSBMD::insert_textures(string& nsbmd_file, string& img_folder, string& nsbm
                     nsbmd_vector_mod[texture_data_index] += color;
 
                     ++x2;
-				}
+				} else if (format == 2) {
+					alpha = 0xFF;
+
+					color = img[color_index] >> 6;
+                    nsbmd_vector_mod[texture_data_index] = color;
+					color = img[color_index + 4] >> 4;
+                    nsbmd_vector_mod[texture_data_index] += color;
+					color = img[color_index + 8] >> 2;
+                    nsbmd_vector_mod[texture_data_index] += color;
+					color = img[color_index + 12];
+                    nsbmd_vector_mod[texture_data_index] += color;
+
+                    x2 += 3;                   
+                }  
 			}
 		}
 
 		if (format == 3) {
 			texture_data_offs += width * height / 2;
-		} else {
+		} else if (format == 2) {
+            texture_data_offs += width * height / 4;
+        } else {
 			texture_data_offs += width * height;
 		}
     }
@@ -192,7 +207,7 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 					color = nsbmd_vector[color_index] & 0x1F;
 					alpha = nsbmd_vector[color_index] & 0xE0;
 
-					// shift 3 to make the "fake" grayscale colors stronger
+					// shift to make the "fake" grayscale colors stronger
 					color = color << 3;
 				
 					img.push_back(color);
@@ -201,10 +216,10 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 					img.push_back(0xFF);
 
 				} else if (format == 3) {
-					alpha = 255;
+					alpha = 0xFF;
 
 					color = nsbmd_vector[color_index] & 0xF;
-					// shift 4 to make the "fake" grayscale colors stronger
+					// shift to make the "fake" grayscale colors stronger
 					color = color << 4;
 					img.push_back(color);
 					img.push_back(color);
@@ -212,19 +227,55 @@ void NSBMD::extract_textures(string& nsbmd_file, string& out_folder) {
 					img.push_back(alpha);
 
 					color = (nsbmd_vector[color_index] & 0xF0) >> 4;
-					// shift 4 to make the "fake" grayscale colors stronger
+					// shift to make the "fake" grayscale colors stronger
 					color = color << 4;
 					img.push_back(color);
 					img.push_back(color);
 					img.push_back(color);
 					img.push_back(alpha);
-				}
+				} else if (format == 2) {
+                    alpha = 0xFF;
+                    
+                    color = nsbmd_vector[color_index] & 0x3;
+                    // shift to make the "fake" grayscale colors stronger
+                    color = color << 6;
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(alpha);
+
+                    color = (nsbmd_vector[color_index] & 0xC) >> 2;
+ 					// shift to make the "fake" grayscale colors stronger
+                    color = color << 6;
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(alpha);
+
+                    color = (nsbmd_vector[color_index] & 0x30) >> 4;
+                    // shift to make the "fake" grayscale colors stronger
+                    color = color << 6;
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(alpha);
+
+                    color = (nsbmd_vector[color_index] & 0xC0) >> 6;
+                    // shift to make the "fake" grayscale colors stronger
+                    color = color << 6;
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(color);
+                    img.push_back(alpha);
+                }
 			}
 		}
 
 		if (format == 3) {
 			texture_data_offs += width * height / 2;
-		} else {
+		} else if (format == 2) {
+            texture_data_offs += width * height / 4;
+        } else {
 			texture_data_offs += width * height;
 		}
 
