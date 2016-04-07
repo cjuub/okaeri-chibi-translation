@@ -20,6 +20,7 @@ cp ./tmp/out/data/mdl/DrainFloor.nsbmd ./tmp/nsbmd_original
 cp ./tmp/out/data/mdl/policeTestWin.nsbmd ./tmp/nsbmd_original
 cp ./tmp/out/data/mdl/policeTestLose.nsbmd ./tmp/nsbmd_original
 cp ./tmp/out/data/mdl/policeTestMiss.nsbmd ./tmp/nsbmd_original
+cp ./tmp/out/data/mdl/pcmPanel.nsbmd ./tmp/nsbmd_original
 echo " Done!"
 
 echo -n "Extracting text into folder text_original..."
