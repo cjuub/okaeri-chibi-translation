@@ -725,14 +725,14 @@ Data was copied.
 Erasing data.<N>Please do not turn off the power<N>or remove the game card.
 Data %d is corrupt.<N>Data %d will be deleted.
 Data was deleted.
-Could not read data.<N>Please turn off the power an<N>re-insert the game card.
-Could not write data.<N>Please turn off the power an<N>re-insert the game card.
+Could not read data.<N>Please turn off the power and<N>re-insert the game card.
+Could not write data.<N>Please turn off the power and<N>re-insert the game card.
 Do you want to erase<N>all save data?
 Erasing all save data.<N>Erased data can not be restored,<N>are you really sure?
 Now saving.<N>Please do not turn off the power<N>or remove the game card.
 
-<1a06ff000004><1a0680000000>＜Mesa's toy box＞<N>Length: 24cm<N>Characteristic: Amazing fangs.<N>Favorite food: Tomato<N>Weak point: Spicy things.<N>※Goes numb if given<N>spicy things<1a068000001e>...<1a0680000003>
-<1a06ff000004>It's broken and can not be read.
+<1a06ff000004><1a0680000000>＜Mesa's toy box＞<N>Length: 24cm<N>Characteristic: Amazing fangs.<N>Favorite food: Tomato<N>Weak point: Spicy things.<N>※Goes numb if given spicy<1a068000001e>...<1a0680000003>
+<1a06ff000004>It's blurry and can't be read.
 <1a06ff000004><1a0680000000>＜Habanero's toy box＞<N>Length: 10cm<N>Favorite food: Spicy things.<N>Weak point: Water.<N>Special skill: Habanero Chop.<N>※Swells up if soaked in water.<1a0680000003>
 <1a06ff000004><1a0680000000>＜Acappella's toy box＞<N>Length: 17cm<N>Type: Alarm clock.<N>Yearning: The big city.<N>Pride: Voice.<N>※Warning for noisy sounds.<1a0680000003>
 <1a06ff000004><1a0680000000>＜Iberico's toy box＞<N>Length: 19cm<N>Dream: Become a Super Policeman.<N>Beloved car: Patrol Car.<N>Strong point: Fast eating.<N>※Start the sirens!<1a0680000003>

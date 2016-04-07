@@ -112,7 +112,7 @@ I'll be doing the dishes soon so<N>you can't play around there.
 <1a0680010003>Don't do that!<1a0680010002>
 I will not accept that<N>you drain the water!
 
-<1a06ff000004><1a0680000000>Length: 30cm<N>Weight: 500g<N>Favorite food: Tomato<N>Weak point: Spicy things<N>※Goes numb if given<N>spicy things<1a068000001e>...<1a0680000003>
+<1a06ff000004><1a0680000000>Length: 30cm<N>Weight: 500g<N>Favorite food: Tomato<N>Weak point: Spicy things<N>※Goes numb if given spicy<1a068000001e>...<1a0680000003>
 <1a06ff000004>It's blurry and can't be read
 
 <1a0680010003>You!<1a0680010002> Just what are you<N>trying to make me eat!?
@@ -346,7 +346,7 @@ It has a strange color, but<N><1a078004000a00>I'll eat it anyways!
 I don't want any spicy ones!
 
 
-You think that attack<N>would work on me?
+You thought that attack<N>would work on me?
 *Puuh*...<N>It finally settled down.
 Anyways, <1a078004000a00>you! Just what<N>did you give me!?
 Next time you make me eat<N>something strange like that...
