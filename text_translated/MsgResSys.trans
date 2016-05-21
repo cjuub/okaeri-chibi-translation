@@ -134,8 +134,8 @@ Freshly Baked Cookie
 Dust Bag
 Greed Tower
 Moolah Pouch
-Scrap Paper
-Cookie Crumbles
+Wastepaper
+Cookie Crumbs
 Empty Can
 Empty Bottle
 Potato Chips Bag
@@ -143,8 +143,8 @@ Bottle Cap
 Leaf
 Candy Leftovers
 Candy Wrapper
-Penguin Soda
-Empty Penguin Soda
+PopFizz Soda
+Empty PopFizz Soda
 Chocolate Leftovers
 Apple Leftovers
 Banana Peel
@@ -358,7 +358,7 @@ Steamy Object
 Comfortable Object
 Fluttering Object
 
-Welcome to the Chibi-Computer!
+Welcome to the Chibi-PC!
 Come back again〜!
 Chibi-Training
 Chibi-Robo Manual
@@ -731,12 +731,12 @@ Do you want to erase<N>all save data?
 Erasing all save data.<N>Erased data can not be restored,<N>are you really sure?
 Now saving.<N>Please do not turn off the power<N>or remove the game card.
 
-<1a06ff000004><1a0680000000>＜Mesa's toy box＞<N>Length: 24cm<N>Characteristic: Amazing fangs.<N>Favorite food: Tomato<N>Weak point: Spicy things.<N>※Goes numb if given spicy<1a068000001e>...<1a0680000003>
-<1a06ff000004>It's blurry and can't be read.
-<1a06ff000004><1a0680000000>＜Habanero's toy box＞<N>Length: 10cm<N>Favorite food: Spicy things.<N>Weak point: Water.<N>Special skill: Habanero Chop.<N>※Swells up if soaked in water.<1a0680000003>
-<1a06ff000004><1a0680000000>＜Acappella's toy box＞<N>Length: 17cm<N>Type: Alarm clock.<N>Yearning: The big city.<N>Pride: Voice.<N>※Warning for noisy sounds.<1a0680000003>
-<1a06ff000004><1a0680000000>＜Iberico's toy box＞<N>Length: 19cm<N>Dream: Become a Super Policeman.<N>Beloved car: Patrol Car.<N>Strong point: Fast eating.<N>※Start the sirens!<1a0680000003>
-<1a06ff000004><1a0680000000>＜Ketchup's toy box＞<N>Length: 21cm<N>Strong point: Growing tomatoes.<N>Favorite place: Gardens with soil.<N>Pride: Guitar technique.<N>Common phrase: 〜chup<1a0680000003>
+<1a06ff000004><1a0680000000>＜Mesa's Toy Box＞<N>Length: 24cm<N>Characteristic: Amazing fangs<N>Favorite food: Tomato<N>Weak point: Spicy things<N>※Goes numb if given spicy<1a068000001e>...<1a0680000003>
+<1a06ff000004>The rest is blurry and<N>can not be read.
+<1a06ff000004><1a0680000000>＜Habanero's Toy Box＞<N>Length: 10cm<N>Favorite food: Spicy things<N>Weak point: Water<N>Special skill: Habanero Chop<N>※Swells up if soaked in water<1a0680000003>
+<1a06ff000004><1a0680000000>＜Acappella's Toy Box＞<N>Length: 17cm<N>Type: Alarm clock<N>Yearning: The big city<N>Pride: Voice<N>※Warning for noisy sounds<1a0680000003>
+<1a06ff000004><1a0680000000>＜Iberico's Toy Box＞<N>Length: 19cm<N>Dream: Become a Super Policeman<N>Beloved car: Patrol Car<N>Strong point: Fast eating<N>※Start the sirens!<1a0680000003>
+<1a06ff000004><1a0680000000>＜Ketchup's Toy Box＞<N>Length: 21cm<N>Strong point: Growing tomatoes<N>Favorite place: Gardens with soil<N>Pride: Guitar technique<N>Common phrase: 〜chup<1a0680000003>
 
 <1a0680000006>STAFF CREDITS
 <1a0680000006>DIRECTOR<N><N>Hiroshi Moriyama
